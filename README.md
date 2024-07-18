@@ -1,5 +1,9 @@
 # My Personal Website
 
+Consider using Jekyll <br>
+https://youtu.be/g6AJ9qPPoyc?si=pEH-BNq-GTCTd-kF <br>
+https://github.com/HazzaMore/hazzamore.github.io/actions/new
+
 ### All the code used to host my website off
 Please do not share the repository or use code without asking for permission: <br>
 harry.moore.meng@gmail.com
