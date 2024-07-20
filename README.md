@@ -24,4 +24,6 @@ https://youtu.be/qP8kir2GUgo?si=w2SZ6EcOjvurGzCX
 
 ### Useful links
 Social logos https://uxwing.com/tag/social-media-icons/ <br>
-Video Background https://youtu.be/8MgpE2DTTKA?si=TxVarcKQIMgt054p
+Video Background https://youtu.be/8MgpE2DTTKA?si=TxVarcKQIMgt054p <br>
+Profile Card https://medium.com/@castonboyd/building-a-profile-card-with-html-and-css-grid-5b1af4c3f59d <br>
+Button SFX I want to add https://medium.com/@castonboyd/an-intro-to-css-by-building-a-modern-style-button-dff7e8f47966

@@ -1,13 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Harry & Hazza</title>
+</head>
+
+<body>
   <section class="showcase">
     <header>
-      <h2 class="logo">Harry & Hazza</h2>
+      <!-- <div class="logo">
+        <img id="HH_Logo" src="images\Logos\HH_Logo.png" />
+      </div> -->
+      <h2 class ="logo">Harry & Hazza</h2>
       <div class="toggle"></div>
-      <link rel="stylesheet" href="style.css" />
+      <script src="https://kit.fontawesome.com/8695b27503.js" crossorigin="anonymous"></script>
     </header>
     <video src="videos\Gradient_loop.mp4" muted loop autoplay></video>
     <div class="overlay"></div>
     <div class="text">
-      <h2>Where Cloud Development </h2> 
+      <h2>Where Cloud <br> Development </h2> 
       <h3>Meets Creativity</h3>
       <p>Discover how Harry & Hazza can empower your company</p>
       <a href="#">See More</a>
@@ -19,6 +33,7 @@
       <li><a href="//www.instagram.com/harrymooreuk/"><img src="images\Logos\black-instagram-icon.svg"></a></li>
     </ul>
   </section>
+
   <div class="menu">
     <ul>
       <li><a href="#">Home</a></li>
@@ -26,9 +41,25 @@
       <li><a href="#">Previous Work</a></li>
       <li><a href="#">Code Skillset</a></li>
       <li><a href="#">Artwork</a></li>
-      <li><a href="#">Portfolio with Loserfruit</a></li>
-      <li><a href="#">Portfolio with Other Youtubers</a></li>
+      <li><a href="#">Loserfruit Work</a></li>
+      <li><a href="#">Other YouTube Work</a></li>
       <li><a href="#">In My Free Time</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </div>
+
+  <!-- See 32 mins into tutorial -->
+  <script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', function() {
+      menuToggle.classList.toggle('active')
+      showcase.classList.toggle('active')
+    })
+  </script>
+
+</body>
+
+
+</html>
