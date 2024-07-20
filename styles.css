@@ -203,7 +203,7 @@
 
 /* Main Content CSS */
 .main {
-  background-color: #141414;
+  background-color: #1b1b1b;
 }
 
 .main__container {
@@ -213,7 +213,7 @@
   justify-self: center;
   margin: 0 auto;
   height: 90vh;
-  background-color: #131313;
+  background-color: #1b1b1b;
   z-index: 1;
   width: 100%;
   max-width: 1300px;
@@ -360,7 +360,7 @@
 
 /* Services Section */
 .services {
-  background: #131313;
+  background: #1B1B1B;
   display: flex;
   flex-direction: column;
   justify-content: center;
