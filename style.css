@@ -4,6 +4,7 @@
 :root{
   --overlay-colour: #e34b33;
   --BlackGrey-colour: #111;
+  --default-transition: 0.5s;
 }
 
 
@@ -25,7 +26,7 @@
   align-items: center;
   background: var(--BlackGrey-colour);
   color: white;
-  transition: 0.5s;
+  transition: var(--default-transition);
   /* position is 2 layers above main */
   z-index: 2;
 }
@@ -51,6 +52,7 @@
 .logo {
   text-transform: uppercase;
   cursor: pointer;
+  list-style: none;
 }
 
 /* menu burger */
@@ -98,6 +100,7 @@
 .text {
   position: relative;
   z-index: 10;
+  transition: var(--default-transition);
 }
 
 .text h2 {
@@ -106,14 +109,16 @@
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
+  transition: var(--default-transition);
 }
 
 .text h3 {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 700;
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
+  transition: var(--default-transition);
 }
 
 .text p {
@@ -122,6 +127,7 @@
   margin: 20px 0;
   font-weight: 400;
   max-width: 700px;
+  transition: var(--default-transition);
 }
 
 /* See More button */
@@ -136,7 +142,7 @@
   margin-top: 10px;
   color: var(--BlackGrey-colour);
   letter-spacing: 2px;
-  transition: 0.2s;
+  transition: var(--default-transition);
 }
 .text a:hover {
   font-size: 1.1em;
@@ -160,7 +166,7 @@
   margin-right: 5px;
   filter: invert(1);
   transform: scale(0.3);
-  transition: 0.5s;
+  transition: var(--default-transition);
 }
 .social li a:hover {
   transform: scale(0.5) translateY(-15px);
