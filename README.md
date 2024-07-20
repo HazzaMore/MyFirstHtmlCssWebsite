@@ -16,9 +16,14 @@ https://youtu.be/qP8kir2GUgo?si=w2SZ6EcOjvurGzCX
 1. harrymoore.cloud is available for £1.99 for a year
 1. Custom domain can be added at https://github.com/HazzaMore/website/settings/pages
 
-
 ## General Git command notes
 |Command|description|
 |---|---|
 |`git checkout -b <new_branch_name> <origin_branch_name>`|create new branch from origin branch|
 | `git branch --delete <branchname> `|delete a specific branch|
+
+### Useful links
+Social logos https://uxwing.com/tag/social-media-icons/ <br>
+Video Background https://youtu.be/8MgpE2DTTKA?si=TxVarcKQIMgt054p <br>
+Profile Card https://medium.com/@castonboyd/building-a-profile-card-with-html-and-css-grid-5b1af4c3f59d <br>
+Button SFX I want to add https://medium.com/@castonboyd/an-intro-to-css-by-building-a-modern-style-button-dff7e8f47966
