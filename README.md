@@ -31,3 +31,6 @@ https://youtu.be/qP8kir2GUgo?si=w2SZ6EcOjvurGzCX
 |Profile Card| https://medium.com/@castonboyd/building-a-profile-card-with-html-and-css-grid-5b1af4c3f59d|
 |Button SFX I want to add| https://medium.com/@castonboyd/an-intro-to-css-by-building-a-modern-style-button-dff7e8f47966|
 |Tab options to add to index| https://youtu.be/P7t13SGytRk?si=QYPEnece9T2EuAkz|
+|I like the glowing on hover effects in this|https://youtu.be/UqHILyzcULE?si=2vKScHxx-1_2DCGG|
+|Contact page setup|https://youtu.be/dImgZ_AH7uA?si=uRZ6gbL0dzGmSErI&t=156|
+|Porfolio preview design|https://youtu.be/ssEiM3zyN08?si=LJWUc3fuzZezPZwR&t=61|
