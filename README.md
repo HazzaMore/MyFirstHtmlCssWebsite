@@ -34,3 +34,6 @@ https://youtu.be/qP8kir2GUgo?si=w2SZ6EcOjvurGzCX
 |I like the glowing on hover effects in this|https://youtu.be/UqHILyzcULE?si=2vKScHxx-1_2DCGG|
 |Contact page setup|https://youtu.be/dImgZ_AH7uA?si=uRZ6gbL0dzGmSErI&t=156|
 |Porfolio preview design|https://youtu.be/ssEiM3zyN08?si=LJWUc3fuzZezPZwR&t=61|
+|Text fill animation|https://youtu.be/lX5LZTWc4f8?si=bPEhurz5qFa4_j24|
+|Parallax|https://youtu.be/aAxt0Z7IXIo?si=npuorE2uypHdJG-k|
+|Animate on scroll|https://youtu.be/ptfUwPJbGlQ?si=BAyjAmAaJHnlZcw_ <br> https://youtu.be/ePgnR4gHIi4?si=PY5wzB90MDWwu7HY|
