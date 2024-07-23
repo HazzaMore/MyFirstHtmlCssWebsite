@@ -22,9 +22,9 @@ https://youtu.be/qP8kir2GUgo?si=w2SZ6EcOjvurGzCX
 |`git checkout -b <new_branch_name> <origin_branch_name>`|create new branch from origin branch|
 | `git branch --delete <branchname> `|delete a specific branch|
 
-## Useful links
+## Links that help with the process
 
-|||
+|Useful links||
 |---|---|
 |Social logos| https://uxwing.com/tag/social-media-icons/|
 |Video Background| https://youtu.be/8MgpE2DTTKA?si=TxVarcKQIMgt054p|
@@ -37,3 +37,14 @@ https://youtu.be/qP8kir2GUgo?si=w2SZ6EcOjvurGzCX
 |Text fill animation|https://youtu.be/lX5LZTWc4f8?si=bPEhurz5qFa4_j24|
 |Parallax|https://youtu.be/aAxt0Z7IXIo?si=npuorE2uypHdJG-k|
 |Animate on scroll|https://youtu.be/ptfUwPJbGlQ?si=BAyjAmAaJHnlZcw_ <br> https://youtu.be/ePgnR4gHIi4?si=PY5wzB90MDWwu7HY|
+|How to make a flipbook|https://youtu.be/THMG5NH9QCU?si=oxgeTAmyuCG7H7pU|
+|How to animate like camillemormal|https://youtu.be/PkADl0HubMY?si=6ba3ppFE4NNY6KaM|
+
+## Inspiration
+
+|Amazing website designs to take inspiration from||
+|---|---|
+|For amazing animations & showcasing images|https://camillemormal.com/|
+|Everything about it screams Apple!|http://www.davidpacheco.co/|
+|Nice carousels and apple ai glow effect |https://www.basedash.com/|
+|Bringing 3D into website design|https://anything.world/|
