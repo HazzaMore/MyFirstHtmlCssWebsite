@@ -26,7 +26,7 @@
   width: 100%;
   min-height: 100vh;
   padding: 10%;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   background: var(--BlackGrey-colour);
@@ -40,7 +40,7 @@
   right: 300px;
 }
 
-.showcase header{
+nav{
   position: absolute;
   top: 0;
   left: 0;
@@ -117,6 +117,7 @@ video {
   line-height: 1em;
   text-transform: uppercase;
   transition: var(--default-transition);
+  margin-top: 3rem;
 }
 
 .text h3 {
@@ -163,6 +164,7 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
+  scale: 120%
 }
 /* to get rid of the bullet points from the list */
 .social li {
@@ -195,7 +197,6 @@ video {
   position: relative;
   list-style: none;
 }
-
 .menu ul li a {
   /* removes link underlines */
   text-decoration: none;
@@ -204,7 +205,6 @@ video {
   color: var(--BlackGrey-colour);
   
 }
-
 .menu ul li a:hover {
   color: var(--overlay-colour);
   transition: 0.3s;
@@ -229,23 +229,8 @@ video {
   z-index: 2;
 }
 
-
 .portfolio.active {
   right: 300px;
-}
-
-.portfolio header{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 4% 5%;
-  z-index: 1000;
-  display: flex;
-  /* vertical */
-  align-items: center;
-  /* horizontal spacing */
-  justify-content: space-between;
 }
 
 /* darken layer */
@@ -385,20 +370,6 @@ video {
 
 .aboutme.active {
   right: 300px;
-}
-
-.aboutme header{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 4% 5%;
-  z-index: 1000;
-  display: flex;
-  /* vertical */
-  align-items: center;
-  /* horizontal spacing */
-  justify-content: space-between;
 }
 
 /* darken layer */
