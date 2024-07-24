@@ -83,58 +83,6 @@ video {
   mix-blend-mode: overlay; */
 }
 
-.text {
-  position: relative;
-  z-index: 10;
-  transition: var(--default-transition);
-}
-
-.text h2 {
-  font-size: 5em;
-  font-weight: 800;
-  color: #fff;
-  line-height: 1em;
-  text-transform: uppercase;
-  transition: var(--default-transition);
-  margin-top: 3rem;
-}
-
-.text h3 {
-  font-size: 3em;
-  font-weight: 700;
-  color: #fff;
-  line-height: 1em;
-  text-transform: uppercase;
-  transition: var(--default-transition);
-}
-
-.text p {
-  font-size: 1.1em;
-  color: #fff;
-  margin: 20px 0;
-  font-weight: 400;
-  max-width: 700px;
-  transition: var(--default-transition);
-}
-
-/* See More button */
-.text a {
-  display: inline-block;
-  font-size: 1em;
-  background: #fff;
-  padding: 10px 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 500;
-  margin-top: 10px;
-  color: var(--BlackGrey-colour);
-  letter-spacing: 2px;
-  transition: var(--default-transition);
-}
-.text a:hover {
-  font-size: 1.1em;
-}
-
 .social {
   position: absolute;
   z-index: 10;
@@ -209,6 +157,58 @@ video {
   right: 300px;
 }
 
+.text {
+  vertical-align: middle;
+  z-index: 10;
+  transition: var(--default-transition);
+  padding-top: 8rem;
+}
+
+.text h2 {
+  font-size: 5em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+  transition: var(--default-transition);
+}
+
+.text h3 {
+  font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+  transition: var(--default-transition);
+}
+
+.text p {
+  font-size: 1.1em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+  transition: var(--default-transition);
+}
+
+/* See More button */
+.text a {
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: var(--BlackGrey-colour);
+  letter-spacing: 2px;
+  transition: var(--default-transition);
+}
+.text a:hover {
+  font-size: 1.1em;
+}
+
 /*      Portfolio       */
 
 /* 33:53 to check on */
@@ -253,7 +253,8 @@ video {
   line-height: 1em;
   text-transform: uppercase;
   transition: var(--default-transition);
-  margin-top: 150px;
+  margin-top: 3rem;
+  margin: 3rem;
 }
 
 /* .portfolio h3 {
@@ -282,6 +283,8 @@ video {
   align-items: center;
   gap: 2.3rem;
   margin-top: 4.2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   z-index: 4;
 }
 
@@ -348,6 +351,34 @@ video {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1600px) {
+  .Portfolio-content {
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 2rem;
+    margin-right: 2rem; }
+  .portfolio h2{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  } }
+
+@media screen and (max-width: 1300px) {
+  .Portfolio-content {
+    grid-template-columns: repeat(2, 1fr); 
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .portfolio h2{
+    margin-left: 1rem;
+    margin-right: 1rem;} }
+
+@media screen and (max-width: 900px) {
+  .Portfolio-content {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 0rem;
+    margin-right: 0rem; }
+  .portfolio h2{
+    margin-left: 0rem;
+    margin-right: 0rem; } }
+
 /*    About Me     */
 
 .aboutme {
@@ -355,7 +386,7 @@ video {
   right: 0;
   width: 100%;
   min-height: 100vh;
-  padding: 50px;
+  padding: 100px;
   /* display: flex; */
   /* justify-content: space-between; */
   align-items: center;
@@ -384,26 +415,25 @@ video {
 	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
 }
 
-.card .aboutmerow {
+.aboutmerow {
   display: grid;
-  grid-template-columns: (1fr,1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   margin-top: 4.2rem;
 }
 
-.aboutmerow h3 {
-  
-}
 
 /* text */
 .aboutme h2 {
   font-size: 5em;
   font-weight: 800;
   color: #fff;
-  line-height: 1em;
-  text-transform: uppercase;
+  line-height: 1.3em;
+  text-transform: none;
   transition: var(--default-transition);
-  margin-top: 150px;
+  margin-bottom: 15%;
+  /* padding-inline: 3%; */
+  
 }
 
 .aboutme h3 {
@@ -411,9 +441,15 @@ video {
   font-weight: 700;
   color: #fff;
   line-height: 1em;
-  text-transform: uppercase;
+  text-transform: none;
   transition: var(--default-transition);
   margin-top: 30px;
+  margin-top: 15%;
+  /* padding-inline: 3%; */
+}
+
+.aboutme h4 {
+  font-size: 4em
 }
 
 .aboutme p {
@@ -444,15 +480,3 @@ video {
     margin-right: 150px;
   }
 }
-
-@media screen and (max-width: 1600px) {
-  .Portfolio-content {
-    grid-template-columns: repeat(3, 1fr); } }
-
-@media screen and (max-width: 1300px) {
-  .Portfolio-content {
-    grid-template-columns: repeat(2, 1fr); } }
-
-@media screen and (max-width: 900px) {
-  .Portfolio-content {
-    grid-template-columns: repeat(1, 1fr); } }
