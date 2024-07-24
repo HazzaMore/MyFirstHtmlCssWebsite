@@ -39,6 +39,7 @@ https://youtu.be/qP8kir2GUgo?si=w2SZ6EcOjvurGzCX
 |Animate on scroll|https://youtu.be/ptfUwPJbGlQ?si=BAyjAmAaJHnlZcw_ <br> https://youtu.be/ePgnR4gHIi4?si=PY5wzB90MDWwu7HY|
 |How to make a flipbook|https://youtu.be/THMG5NH9QCU?si=oxgeTAmyuCG7H7pU|
 |How to animate like camillemormal|https://youtu.be/PkADl0HubMY?si=6ba3ppFE4NNY6KaM|
+|See Watch Later on YT for page design tutorials||
 
 ## Inspiration
 
