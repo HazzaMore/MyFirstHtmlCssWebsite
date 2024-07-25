@@ -163,57 +163,9 @@ Include things such as loserfruit work, other yt work, code projects, artwork et
     </ul>
   </div>
 
-  <script>
-    const menuToggle = document.querySelector('.toggle')
-    const aboutme = document.querySelector('.aboutme')
-
-    menuToggle.addEventListener('click', function() {
-      menuToggle.classList.toggle('active')
-      aboutme.classList.toggle('active')
-    })
-  </script>
-
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      offset:400,
-      duration: 1000
-    });
-  </script>
-    
-  <script>
-    window.si = ScrollReveal();
-    sr.srreveal('.navbar',{
-      duration: 2000,
-      origin: 'bottom'
-    })
-  </script>
-
-<!-- Scroll to top Function -->
-<script>
-  // Get the button
-  let mybutton = document.getElementById("ToTopWrapper");
-  
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-      mybutton.style.display = "block"
-    } else {
-      mybutton.style.display = "none";
-    }
-  }
-  
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-</script>
+  <script src="..\js\main.js"></script>
 
 
 </body>
-
-
 </html>
