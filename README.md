@@ -36,7 +36,7 @@ https://youtu.be/qP8kir2GUgo?si=w2SZ6EcOjvurGzCX
 |Porfolio preview design|https://youtu.be/ssEiM3zyN08?si=LJWUc3fuzZezPZwR&t=61|
 |Text fill animation|https://youtu.be/lX5LZTWc4f8?si=bPEhurz5qFa4_j24|
 |Parallax|https://youtu.be/aAxt0Z7IXIo?si=npuorE2uypHdJG-k|
-|Animate on scroll|https://youtu.be/ptfUwPJbGlQ?si=BAyjAmAaJHnlZcw_ <br> https://youtu.be/ePgnR4gHIi4?si=PY5wzB90MDWwu7HY|
+|Animate on scroll|https://github.com/michalsnik/aos <br> https://youtu.be/ptfUwPJbGlQ?si=BAyjAmAaJHnlZcw_ <br> https://youtu.be/ePgnR4gHIi4?si=PY5wzB90MDWwu7HY|
 |How to make a flipbook|https://youtu.be/THMG5NH9QCU?si=oxgeTAmyuCG7H7pU|
 |How to animate like camillemormal|https://youtu.be/PkADl0HubMY?si=6ba3ppFE4NNY6KaM|
 |See Watch Later on YT for page design tutorials||

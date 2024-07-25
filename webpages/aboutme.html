@@ -13,23 +13,23 @@ Include things such as loserfruit work, other yt work, code projects, artwork et
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>About Me</title>
     <link rel="icon" href="..\images\Logos\HH_Logo_white.png" type="image/x-icon"/>
     <script src="https://kit.fontawesome.com/8695b27503.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
   <section class="aboutme">
     <header>
-      <nav>
+      <nav class="navbar" data-aos="slide-down">
         <li class ="logo"><a href="/"><img src = "../images/Logos/HH_Logo_white.png" width = 80px></a></li>
         <div class="toggle"></div>
     </nav>
     </header>
 
-    <video class="othervideo" src="../videos/Gradient_loop.mp4" playsinline muted loop autoplay></video>
+    <video id="othervideo" src="../videos/Gradient_loop.mp4" playsinline muted loop autoplay></video>
     <div class="overlay"></div>
 
     <main class="experience">
@@ -40,64 +40,109 @@ Include things such as loserfruit work, other yt work, code projects, artwork et
       </section>
       <section class="padded">
         <div class="aboutmerow">
-          <div class="col-md-6 col-sm-6">
-            <div class="aboutme-left">
-              <img src="..\images\Profile.JPG">
-            </div>
+          <div class="aboutme-left" data-aos="fade-right">
+            <img src="..\images\Profile.JPG">
           </div>
-          <div class="col-md-6 col-sm-6">
-            <div class="aboutme-right">
-              <h4>About Me</h4>
-              <p>A highly driven and enthusiastic individual with a zeal for automation, design and innovation in the Engineering and Software Industries. Taking great pride in my strong motivation to develop as an all-rounded individual as well as my excellent interpersonal and communication skills. This extends to outside the software and engineering industry, having worked with a number of Youtubers and Streamers on various projects.
-                <br> <br> My coding and software experience includes:
-              </p>
-              <ul class = "apps_row">
-                <img src="..\images\Logos\python-icon.svg">
-                <img src="..\images\Logos\terraform-icon.svg">
-                <img src="..\images\Logos\yaml-icon.svg">
-                <img src="..\images\Logos\html-icon.svg">
-                <img src="..\images\Logos\css-icon.svg">
-                <img src="..\images\Logos\sql-icon.svg">
-                <img src="..\images\Logos\kubernetes-icon.svg">
-                <img src="..\images\Logos\docker-icon.svg">
-                <img src="..\images\Logos\vsc-icon.svg">
-                <img src="..\images\Logos\linux-icon.svg">
-                <img src="..\images\Logos\git-icon.svg">
-                <img src="..\images\Logos\github-icon.svg">
-                <img src="..\images\Logos\jira-icon.svg">
-                <img src="..\images\Logos\azure-devops-icon.svg">
-                <img src="..\images\Logos\azure-pipelines-icon.svg">
-                <!-- <img src="..\images\Logos\azure-repos-icon.svg">  -->
-                <img src="..\images\Logos\azure-icon.svg">
-                <img src="..\images\Logos\aws-icon.svg">
-                <img src="..\images\Logos\gcp-icon.svg">
-                <p> </p>
-                <img src="..\images\Logos\adobe-photoshop-icon.svg">
-                <img src="..\images\Logos\adobe-premiere-pro-icon.svg">
-                <img src="..\images\Logos\adobe-after-effects-icon.svg">
-                <img src="..\images\Logos\indesign-icon.svg">
-                <img src="..\images\Logos\blender-icon.svg">
-                <img src="..\images\Logos\unreal-engine-icon.svg">
-                <img src="..\images\Logos\obs-icon.svg">
-                <img src="..\images\Logos\discord-icon.svg">
-              </ul>
-            </div>
+          <div class="aboutme-right" data-aos="fade-left">
+            <h4>About Me</h4>
+            <p>A highly driven and enthusiastic individual with a zeal for automation, design and innovation in the Engineering and Software Industries. Taking great pride in my strong motivation to develop as an all-rounded individual as well as my excellent interpersonal and communication skills. This extends to outside the software and engineering industry, having worked with a number of Youtubers and Streamers on various projects.
+              <br> <br> My coding and software experience includes:
+            </p>
+            <ul class = "apps_row">
+              <img src="..\images\Logos\python-icon.svg">
+              <img src="..\images\Logos\terraform-icon.svg">
+              <img src="..\images\Logos\yaml-icon.svg">
+              <img src="..\images\Logos\html-icon.svg">
+              <img src="..\images\Logos\css-icon.svg">
+              <img src="..\images\Logos\sql-icon.svg">
+              <img src="..\images\Logos\kubernetes-icon.svg">
+              <img src="..\images\Logos\docker-icon.svg">
+              <img src="..\images\Logos\vsc-icon.svg">
+              <img src="..\images\Logos\linux-icon.svg">
+              <img src="..\images\Logos\git-icon.svg">
+              <img src="..\images\Logos\github-icon.svg">
+              <img src="..\images\Logos\jira-icon.svg">
+              <img src="..\images\Logos\azure-devops-icon.svg">
+              <img src="..\images\Logos\azure-pipelines-icon.svg">
+              <!-- <img src="..\images\Logos\azure-repos-icon.svg">  -->
+              <img src="..\images\Logos\azure-icon.svg">
+              <img src="..\images\Logos\aws-icon.svg">
+              <img src="..\images\Logos\gcp-icon.svg">
+              <p> </p>
+              <img src="..\images\Logos\adobe-photoshop-icon.svg">
+              <img src="..\images\Logos\adobe-premiere-pro-icon.svg">
+              <img src="..\images\Logos\adobe-after-effects-icon.svg">
+              <img src="..\images\Logos\indesign-icon.svg">
+              <img src="..\images\Logos\blender-icon.svg">
+              <img src="..\images\Logos\unreal-engine-icon.svg">
+              <img src="..\images\Logos\obs-icon.svg">
+              <img src="..\images\Logos\discord-icon.svg">
+            </ul>
           </div>
-        </div>
+      </div>
     </section>
-      <section class= "JobHeader" id="JobHeader">
+      <section class= "JobHeader" id="JobHeader" data-aos="fade">
         <div class="JobHeader_container">
           <div class="text">
-            <h3>2022</h3>
+            <h3>2022-2024</h3>
             <h4>Kubrick Group <br> Cloud Engineering Consultant</h4>
           </div>
         </div>
       </section>
-      <section class="img_banner">
-        <img src="..\images\jlr_banner.png">
+      <section class="media_banner">
+        <video src="..\videos\JLR_video.mp4"playsinline muted loop autoplay>
       </section>
-      <section>
-        <p>For the last 2 years, I trained at Kubrick Group where I honed my expertise (with a focus in cloud) in multi-platform Scripting, Automation, DevOps pipelines, Docker, Kubernetes, and Infrastructure as Code using Terraform across Azure, GCP, and AWS. </p>
+      <section class="job_description">
+        <div class="banner_container">
+          <div class="banner">
+            <div class="left_column" data-aos="fade">
+              <p2>For the last 2 years, I have been working for Kubrick Group where I honed my expertise in numerous software development and cloud provisioning projects.</p2>
+              <p2><br>I placed with Jaguar Land Rover for a year and a half, contributing to a team tasked with developing software for the certification and homologation process.
+                It was during a big period of change at JLR, as they transition to companywide cloud hosted applications to streamline their workflow and exchanging of data. 
+                Initially this required frequent stakeholder engagement to assess inefficiencies in existing processes, aligning them with the new software's capabilities & learning what to adapt to match their requirements.
+                <br>Upon approaching the first prod deployment, work evolved into developing test automation scripts utilizing BDP methodology and selenium. This required producing python and feature file scripts within their test suite, configuring ci-yaml and undergoing an extensive merge request process. </p2>
+              <p2><br><br>Including the following across Azure, GCP, and AWS:<br></p2>
+              <ul class="bulletlist">
+                <li>Multi-platform Scripting Automation</li>
+                <li>DevOps pipelines</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>Infrastructure as Code using Terraform</li>
+              </ul>
+            </div>          
+            <div class="right_column" data-aos="fade">
+              <p2><strong>Cloud Engineer</strong> <br>
+                Software Development <br>
+                Stakeholder Engagement <br>
+                Software Demos <br>
+                Test Automation</p2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class= "JobHeader" id="JobHeader" data-aos="fade">
+        <div class="JobHeader_container">
+          <div class="text">
+            <h3>2020-2021</h3>
+            <h4>Unique Team Building, Australia <br> Project Design Engineer</h4>
+          </div>
+        </div>
+      </section>
+      <section class="media_banner">
+        <img src="..\images\Placement_preview.png"playsinline muted loop autoplay>
+      </section>
+
+      <section class="job_description">
+        <div class="banner_container">
+          <div class="banner">
+            <div class="left_column" data-aos="fade">
+              <p2></p2>
+            </div>          
+            <div class="right_column" data-aos="fade">
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -125,7 +170,21 @@ Include things such as loserfruit work, other yt work, code projects, artwork et
     })
   </script>
 
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset:400,
+      duration: 1000
+    });
+  </script>
+    
+  <script>
+    window.si = ScrollReveal();
+    sr.srreveal('.navbar',{
+      duration: 2000,
+      origin: 'bottom'
+    })
+  </script>
 
 </body>
 
