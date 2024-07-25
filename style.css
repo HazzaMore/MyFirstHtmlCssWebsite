@@ -422,6 +422,47 @@ video {
   margin-top: 4.2rem;
 }
 
+.aboutme-left img{
+  border-radius: 50%;
+  width: 400px;
+}
+
+.aboutme-right {
+  /* margin-left: -20rem; */
+  /* need to widen it */
+}
+
+.aboutme .name_profession {
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+.apps_row img{
+  width: 40px;
+  height: 40px;
+}
+
+.JobHeader {
+  /* background: #f1f1f1; */
+  opacity: 1;
+  padding: 50px 0 30px 0;
+  text-align: left;
+  margin-top: 40px;
+  z-index: 3;
+}
+
+.JobHeader .text {
+  margin-top: 40px;
+}
+
+.img_banner img{
+  top: 0;
+  left: 0;
+  width: 100vw;
+  object-fit: cover;
+  margin-left: -7rem;
+  /* margin-right: -16rem; */
+}
 
 /* text */
 .aboutme h2 {
@@ -431,7 +472,6 @@ video {
   line-height: 1.3em;
   text-transform: none;
   transition: var(--default-transition);
-  margin-bottom: 15%;
   /* padding-inline: 3%; */
   
 }
@@ -443,8 +483,6 @@ video {
   line-height: 1em;
   text-transform: none;
   transition: var(--default-transition);
-  margin-top: 30px;
-  margin-top: 15%;
   /* padding-inline: 3%; */
 }
 
@@ -460,7 +498,6 @@ video {
   max-width: 700px;
   transition: var(--default-transition);
 }
-
 
 /*    Next Section     */
 
