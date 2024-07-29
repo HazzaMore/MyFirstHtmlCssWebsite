@@ -13,57 +13,277 @@ Include things such as loserfruit work, other yt work, code projects, artwork et
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
-    <title>Harry / Hazza</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>About Me</title>
+    <link rel="icon" href="..\images\Logos\HH_Logo_white.png" type="image/x-icon"/>
+    <script src="https://kit.fontawesome.com/8695b27503.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
-  <section class="showcase">
+  <section class="aboutme">
     <header>
-      <!-- <div class="logo">
-        <img id="HH_Logo" src="images\Logos\HH_Logo.png" />
-      </div> -->
-      <li class ="logo"><a href="/"><img src = "../images/Logos/HH_Logo_white.png" width = 80px></a></li>
-      <div class="toggle"></div>
-      <script src="https://kit.fontawesome.com/8695b27503.js" crossorigin="anonymous"></script>
+      <nav class="navbar" data-aos="slide-down">
+        <li class ="logo"><a href="/"><img src = "../images/Logos/HH_Logo_white.png" width = 80px></a></li>
+        <div class="toggle"></div>
+    </nav>
     </header>
-    <!-- <video src="../videos/Gradient_loop.mp4" muted loop autoplay></video> -->
+
+    <video id="othervideo" src="../videos/Gradient_loop.mp4" playsinline muted loop autoplay></video>
     <div class="overlay"></div>
-    <div class="text">
-      <h2>About Me</h2> 
-      <h3>This page is a work in progress</h3>
-      <p>Come back here again soon for content</p>
-      <!-- <a href="#">See More</a> -->
+
+    <main class="experience">
+      <div id="ToTopWrapper">
+        <button onclick="topFunction()" id="ToTopBtn" title="Go to top">Top</button>
+      </div>
+      <section class="name_profession">
+        <div class="text">
+          <h3>Harry Moore</h3>
+          <h2>Cloud Engineer <br> based in London.</h2>
+      </section>
+      <section class="padded">
+        <div class="aboutmerow">
+          <div class="aboutme-left" data-aos="fade-right">
+            <img src="..\images\Profile.JPG">
+          </div>
+          <div class="aboutme-right" data-aos="fade-left">
+            <h4>About Me</h4>
+            <p>A highly driven and enthusiastic individual with a zeal for automation, design and innovation in the Engineering and Software Industries. Taking great pride in my strong motivation to develop as an all-rounded individual as well as my excellent interpersonal and communication skills. This extends to outside the software and engineering industry, having worked with a number of Youtubers and Streamers on various projects.
+              <br> <br> My coding and software experience includes:
+            </p>
+            <ul class = "apps_row">
+              <img src="..\images\Logos\python-icon.svg">
+              <img src="..\images\Logos\terraform-icon.svg">
+              <img src="..\images\Logos\yaml-icon.svg">
+              <img src="..\images\Logos\html-icon.svg">
+              <img src="..\images\Logos\css-icon.svg">
+              <img src="..\images\Logos\sql-icon.svg">
+              <img src="..\images\Logos\kubernetes-icon.svg">
+              <img src="..\images\Logos\docker-icon.svg">
+              <img src="..\images\Logos\vsc-icon.svg">
+              <img src="..\images\Logos\linux-icon.svg">
+              <img src="..\images\Logos\git-icon.svg">
+              <img src="..\images\Logos\github-icon.svg">
+              <img src="..\images\Logos\jira-icon.svg">
+              <img src="..\images\Logos\azure-devops-icon.svg">
+              <img src="..\images\Logos\azure-pipelines-icon.svg">
+              <!-- <img src="..\images\Logos\azure-repos-icon.svg">  -->
+              <img src="..\images\Logos\azure-icon.svg">
+              <img src="..\images\Logos\aws-icon.svg">
+              <img src="..\images\Logos\gcp-icon.svg">
+              <p> </p>
+              <img src="..\images\Logos\adobe-photoshop-icon.svg">
+              <img src="..\images\Logos\adobe-premiere-pro-icon.svg">
+              <img src="..\images\Logos\adobe-after-effects-icon.svg">
+              <img src="..\images\Logos\indesign-icon.svg">
+              <img src="..\images\Logos\blender-icon.svg">
+              <img src="..\images\Logos\unreal-engine-icon.svg">
+              <img src="..\images\Logos\obs-icon.svg">
+              <img src="..\images\Logos\discord-icon.svg">
+            </ul>
+          </div>
+      </div>
+    </section>
+      <section class= "JobHeader" id="JobHeader" data-aos="fade">
+        <div class="JobHeader_container">
+          <div class="text">
+            <h3>2022-2024</h3>
+            <h4>Kubrick Group <br> Cloud Engineering Consultant</h4>
+          </div>
+        </div>
+      </section>
+      <section class="media_banner">
+        <video src="..\videos\JLR_video.mp4"playsinline muted loop autoplay>
+      </section>
+      <section class="job_description">
+        <div class="banner_container">
+          <div class="banner">
+            <div class="left_column">
+              <div class="Kubrick"  data-aos="fade">
+                <img src="..\images\Logos\Kubrick_Logo.png" width="600px" class="center" > 
+                <p2>For the last 2 years, I have been working for Kubrick Group where I honed my expertise in numerous software development and cloud provisioning projects.
+                  During my 3 months of training, I developed on my skills across Azure, GCP, and AWS inlcuding in:<br>
+                </p2>
+                <ul class="bulletlist">
+                  <li>Scripting Automation</li>
+                  <li>DevOps Pipelines</li>
+                  <li>Docker</li>
+                  <li>Kubernetes</li>
+                  <li>Infrastructure as Code using Terraform</li>
+                </ul>
+                <p2><br>Additionally, I gained handson experience in provisioning environments for Python, cluster technology, RDBMS, and NoSQL
+                  databases. In July, I undertook an extensive 7 day course through Kubrick, covering the complete process of provisioning databricks in Azure.
+                  Developing PR and CI/CD pipelines for managing code changes, creating & configuring Databrick workspace environments & infrastructure through terraform and setting up CI/CD development flow within Databricks workspace with Asset Bundles and Azure pipelines.
+                </p2>
+              </div>
+              <div class="JLR"  data-aos="fade">
+                <img src="..\images\Logos\JaguarLandRover.png" width="600px" class="center" >
+                <p2>Post training, I placed with Jaguar Land Rover for a year and a half, contributing to a team tasked with developing software for the certification and homologation process. 
+                  It was during a big period of change at JLR, as they transitioned to companywide cloud hosted applications to streamline their workflow and exchange of data.  
+                  Initially this required frequent stakeholder engagement to assess inefficiencies in existing processes, aligning them with the new software's capabilities & learning what to adapt to match their requirements. 
+                  This process required numerous meetings with engineers, learning their processes, developing solutions for it to then be presented in both 20 person meetings and department wide quarterly progress meetings. 
+                  <br> The product produced allowed certification engineers to list legislations the model of car must follow, so that multiple vehicle engineers could provide evidence in the form of text or documents for each.  
+                  All whilst linking data which was most up to date and in one centralised database/application.  
+                  Previously this was done through lengthy excel documents and emailing out individuals for files. 
+                  This meant that once all the data was collated into the internet form, a one button process would convert it into a pdf with the correct formatting ready for governing bodies. 
+                  <br>Upon approaching the first prod deployment, work evolved into developing test automation scripts utilising BDP methodology and selenium.  
+                  This required producing python and feature file scripts within their test suite, configuring ci-yaml and undergoing an extensive merge request process.  
+                  It was a great opportunity to work through from conception to deployment of a software development process. 
+                  All tasks were weighted and ran within 2-week sprints following the agile methodology. 
+                </p2>
+              </div>
+            </div>          
+            <div class="right_column" data-aos="fade">
+              <p2>
+                <strong>Cloud Engineer Consultant</strong> <br>
+                In training
+              </p2>
+              <div class="JLR"  data-aos="fade">
+                <p2><strong>Cloud Engineer</strong> <br>
+                  Software Development <br>
+                  Stakeholder Engagement <br>
+                  Software Demos <br>
+                  Test Automation
+                </p2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class= "JobHeader" id="JobHeader" data-aos="fade">
+        <div class="JobHeader_container">
+          <div class="text">
+            <h3>2020-2021</h3>
+            <h4>Unique Team Building, Australia <br> Project Design Engineer</h4>
+          </div>
+        </div>
+      </section>
+      <section class="media_banner">
+        <img src="..\images\Placement_preview.png"playsinline muted loop autoplay>
+      </section>
+      <section class="job_description">
+        <div class="banner_container">
+          <div class="banner">
+            <div class="left_column" data-aos="fade">
+              <img src="..\images\Logos\UniqueTeamBuilding.png" height="200px" class="center" >
+              <p2>
+                <br> During the COVID-related travel restrictions, I worked remotely from the UK to Australia, collaborating directly with the company director on researching and designing a prototype camping system for the upcoming Tesla Cyber-Truck. 
+                This involved extensive research into materials, solar panel technology, and tent setup mechanisms. 
+                Additionally, I taught myself how to use Blender, a 3D design application, to create photorealistic renders of the concept for investor presentations. 
+                Managing the project required strong independence and organisational skills due to the time zone differences, necessitating careful planning to meet weekly deadlines and effectively communicate progress in one-on-one Google meetings.
+                The final design of the tent system open is restricted under a NDA.
+              </p2>
+            </div>          
+            <div class="right_column" data-aos="fade">
+              <p2><br><strong>Project Design Engineer</strong>
+                <br>Stakeholder Engagement
+                <br>Blender Design
+              </p2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class= "JobHeader" id="JobHeader" data-aos="fade">
+        <div class="JobHeader_container">
+          <div class="text">
+            <h3>2014-2019</h3>
+            <h4>Two Front Teeth Photography, Cheltenham <br> Photo Editor & Framer</h4>
+          </div>
+        </div>
+      </section>
+      <section class="media_banner">
+        <video src="..\videos\PhotoEditingVideo.mp4"playsinline muted loop autoplay>
+      </section>
+      <section class="job_description">
+        <div class="banner_container">
+          <div class="banner">
+            <div class="left_column" data-aos="fade">
+              <img src="..\images\Logos\TwoFrontTeethRounded.png" height="300px" class="center" background="#ffff" >
+              <p2>
+                <br> In my spare time after school, I learnt Adobe Photoshop to retouch family photos, preparing them for client viewing and managed Facebook ad campaigns.
+                This work demanded precision and efficiency, especially when editing numerous photos under strict deadlines.
+                Additionally, I'd been assisting with glass cutting and constructing handmade frames on weekends.
+                I had to ensure that each photo fitted perfectly and remained dust-free, requiring keen attention to detail.
+                Balancing these tasks alongside my studies had strengthened my organisational and time management abilities, allowing me to excel in both my part-time job and academic pursuits.
+              </p2>
+            </div>          
+            <div class="right_column" data-aos="fade">
+              <p2><br><br><br><br><br><strong>Photo Editor</strong>
+                <br>Photoshop
+                <br>Framing
+              </p2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
     </div>
-    <ul class="social">
-      <li><a href="//www.youtube.com/@HazzaMore"><img src="../images\Logos\youtube-icon.svg"></a></li>
-      <li><a href="//www.linkedin.com/in/harrymooremeng/"><img src="../images\Logos\linkedin-square-icon.svg"></a></li>
-      <li><a href="//x.com/HazzaMoreEdits"><img src="../images\Logos\x-social-media-black-icon.svg"></a></li>
-      <li><a href="//www.instagram.com/harrymooreuk/"><img src="../images\Logos\black-instagram-icon.svg"></a></li>
-    </ul>
   </section>
 
   <div class="menu">
     <ul>
       <li><a href="../index.html">Home</a></li>
-      <li><a href="/webpages/myportfolio.html">My Portfolio</a></li>
-      <li><a href="/webpages/mywork.html">My Work</a></li>
+      <li><a href="/webpages/aboutme.html">About Me</a></li>
+      <li><a href="/webpages/myportfolio.html">My Work</a></li>
       <li><a href="/webpages/cv.html">CV</a></li>
       <li><a href="/webpages/contact.html">Contact</a></li>
     </ul>
   </div>
 
-  <!-- See 32 mins into tutorial -->
   <script>
     const menuToggle = document.querySelector('.toggle')
-    const showcase = document.querySelector('.showcase')
+    const aboutme = document.querySelector('.aboutme')
 
     menuToggle.addEventListener('click', function() {
       menuToggle.classList.toggle('active')
-      showcase.classList.toggle('active')
+      aboutme.classList.toggle('active')
     })
   </script>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      offset:400,
+      duration: 1000
+    });
+  </script>
+
+  <script>
+    window.si = ScrollReveal();
+    sr.srreveal('.navbar',{
+      duration: 2000,
+      origin: 'bottom'
+    })
+  </script>
+
+<!-- Scroll to top Function -->
+<script>
+  // Get the button
+  let mybutton = document.getElementById("ToTopWrapper");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+      mybutton.style.display = "block"
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+
 </body>
-
-
 </html>
