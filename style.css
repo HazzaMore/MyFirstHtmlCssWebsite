@@ -60,6 +60,36 @@ nav{
   cursor: pointer;
 }
 
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* width is the same amount the showcase.active is moved by */
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu ul {
+  position: relative;
+  list-style: none;
+}
+.menu ul li a {
+  /* removes link underlines */
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 2.8rem;
+  font-weight: 500;
+  color: var(--BlackGrey-colour);
+  
+}
+.menu ul li a:hover {
+  color: var(--overlay-colour);
+  transition: 0.3s;
+}
+
+
 video {
   position: absolute;
   top: 0;
@@ -147,34 +177,6 @@ video {
 }
 .social li a:hover {
   transform: scale(0.5) translateY(-15px);
-}
-
-.menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  /* width is the same amount the showcase.active is moved by */
-  width: 300px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.menu ul {
-  position: relative;
-  list-style: none;
-}
-.menu ul li a {
-  /* removes link underlines */
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 500;
-  color: var(--BlackGrey-colour);
-  
-}
-.menu ul li a:hover {
-  color: var(--overlay-colour);
-  transition: 0.3s;
 }
 
 /*    Main index     */
@@ -475,15 +477,6 @@ video {
   margin-left: 1.4rem;
 }
 
-.banner {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-gap: 5rem;
-  grid-auto-rows: minmax(50px, auto);
-  color: black;
-  margin-left: 7rem;
-}
-
 .banner_container{
   background-color: rgb(219, 219, 219);
   top: 0;
@@ -494,9 +487,24 @@ video {
   margin-right: 5rem;
 }
 
+.banner {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 5rem;
+  grid-auto-rows: minmax(50px, auto);
+  color: black;
+  margin-left: 7rem;
+}
+
+
 .left_column {
   margin-top: 5rem;
   margin-bottom: 5rem;
+}
+
+.left_column .Kubrick, .left_column .JLR{
+  /* Two rows: one for Kubrick, one for JLR */
+  grid-template-rows: auto auto; 
 }
 
 .job_description .left_column br {
@@ -508,8 +516,18 @@ video {
 }
 
 .right_column {
-  margin-top: 5rem;
-  align-items: center;
+  display: grid;
+  margin-top: 14rem;
+}
+
+.right_column .Kubrick, .right_column .JLR {
+  /* Single row for right column JLR */
+  grid-template-rows: auto; 
+}
+
+/* Ensure JLR in left_column is positioned in the second row */
+.JLR {
+  grid-row: 2; /* Places this in the 3rd row of the left_column */
 }
 
 /* text */
@@ -551,6 +569,13 @@ video {
   color: black;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 @media screen and (max-width: 1300px) {
   .aboutmerow {
     grid-template-columns: 1fr;
@@ -575,6 +600,12 @@ video {
   .media_banner video, .media_banner img{
     margin-left: -4rem;
   }
+
+  .banner img{
+    width: auto;
+    height: 80px;
+  }
+
   .banner_container {
     margin-left: -4rem;
   }
@@ -582,6 +613,10 @@ video {
     grid-gap: 1.5rem;
     margin-left: 4rem;
     margin-right: 1rem;
+    grid-template-columns: 1fr;
+  }
+  .right_column {
+    display: none;
   }
 }
 
