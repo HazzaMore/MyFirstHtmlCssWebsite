@@ -40,6 +40,7 @@ https://youtu.be/qP8kir2GUgo?si=w2SZ6EcOjvurGzCX
 |How to make a flipbook|https://youtu.be/THMG5NH9QCU?si=oxgeTAmyuCG7H7pU|
 |How to animate like camillemormal|https://youtu.be/PkADl0HubMY?si=6ba3ppFE4NNY6KaM|
 |Animations upon loading|https://animate.style/|
+|Infinitely scrolling carousel|https://youtu.be/nAjR0Oj0J8E?si=_Gvmm8RnB7vgUcQR|
 |See Watch Later on YT for page design tutorials||
 
 ## Inspiration

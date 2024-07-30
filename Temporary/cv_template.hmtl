@@ -38,14 +38,14 @@
           <div class="yui-gc">
             <div class="yui-u first">
               <h1>Harry Moore</h1>
-              <h2>London, United Kingdom</h2>
+              <h2>Cloud Engineer</h2>
             </div>
     
             <div class="yui-u">
               <div class="contact-info">
-                <h3><a id="pdf" href="#"><i class="fa fa-download"></i> Download PDF</a><br>
-                <br><a href="Harry.Moore.MEng@gmail.com">Harry.Moore.MEng@gmail.com</a>
-                <br>LinkedIn:<a href=" www.linkedin.com/in/harrymooremeng"> www.linkedin.com/in/harrymooremeng </a></h3>
+                <h3><a id="pdf" href="#"><i class="fa fa-download"></i> Download PDF</a></h3>
+                <h3><a href="Harry.Moore.MEng@gmail.com">Harry.Moore.MEng@gmail.com</a></h3>
+                <h3>Phone Number on request</h3>
               </div><!--// .contact-info -->
             </div>
           </div><!--// .yui-gc -->
@@ -61,11 +61,59 @@
                 </div>
                 <div class="yui-u">
                   <p class="enlarge">
-                    A highly driven and enthusiastic individual with a zeal for automation, design and innovation in the Engineering and Software Industries. Taking great pride in my strong motivation to develop as an all-rounded individual as well as my excellent interpersonal and communication skills. My unique to industry and varied skillsets have gained me a reputation for bringing value to a company, whether that's in designing an engineering product or developing & testing software for major corporations.  
+                    Progressively evolve cross-platform ideas before impactful infomediaries. Energistically visualize tactical initiatives before cross-media catalysts for change. 
+                  </p>
                 </div>
               </div><!--// .yui-gf -->
-
-
+    
+              <div class="yui-gf">
+                <div class="yui-u first">
+                  <h2>Skills</h2>
+                </div>
+                <div class="yui-u">
+    
+                    <div class="talent">
+                      <h2>Web Design</h2>
+                      <p>Assertively exploit wireless initiatives rather than synergistic core competencies.	</p>
+                    </div>
+    
+                    <div class="talent">
+                      <h2>Interface Design</h2>
+                      <p>Credibly streamline mission-critical value with multifunctional functionalities.	 </p>
+                    </div>
+    
+                    <div class="talent">
+                      <h2>Project Direction</h2>
+                      <p>Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.</p>
+                    </div>
+                </div>
+              </div><!--// .yui-gf -->
+    
+              <div class="yui-gf">
+                <div class="yui-u first">
+                  <h2>Technical</h2>
+                </div>
+                <div class="yui-u">
+                  <ul class="talent">
+                    <li>XHTML</li>
+                    <li>CSS</li>
+                    <li class="last">Javascript</li>
+                  </ul>
+    
+                  <ul class="talent">
+                    <li>Jquery</li>
+                    <li>PHP</li>
+                    <li class="last">CVS / Subversion</li>
+                  </ul>
+    
+                  <ul class="talent">
+                    <li>OS X</li>
+                    <li>Windows XP/Vista</li>
+                    <li class="last">Linux</li>
+                  </ul>
+                </div>
+              </div><!--// .yui-gf-->
+    
               <div class="yui-gf">
       
                 <div class="yui-u first">
