@@ -102,17 +102,6 @@ video {
   transition: 0s;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* option if I want a colour overlay */
-  /* background: #03a9f4;
-  mix-blend-mode: overlay; */
-}
-
 #ToTopWrapper {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -179,15 +168,14 @@ video {
   transform: scale(0.5) translateY(-15px);
 }
 
-/*    Main index     */
-.showcase {
+/* shared */
+
+.portfolio, .aboutme, .showcase, .contactme {
   position: absolute;
   right: 0;
   width: 100%;
   min-height: 100vh;
-  padding: 10%;
-  /* display: flex; */
-  justify-content: space-between;
+  padding: 50px;
   align-items: center;
   background: var(--BlackGrey-colour);
   color: white;
@@ -196,8 +184,27 @@ video {
   z-index: 2;
 }
 
-.showcase.active {
+/* darken layer */
+.portfolio::after, .aboutme::after, .contactme::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	background: rgba(0, 0, 0, 0.6);
+	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+.showcase.active, .portfolio.active, .aboutme.active, .contactme.active {
   right: 300px;
+}
+
+/*    Main index     */
+.showcase {
+  padding: 10%;
+  justify-content: space-between;
 }
 
 .text {
@@ -252,38 +259,7 @@ video {
   font-size: 1.1em;
 }
 
-.portfolio, .aboutme {
-  position: absolute;
-  right: 0;
-  width: 100%;
-  min-height: 100vh;
-  padding: 50px;
-  align-items: center;
-  background: var(--BlackGrey-colour);
-  color: white;
-  transition: var(--default-transition);
-  /* position is 2 layers above main */
-  z-index: 2;
-}
-
-/* darken layer */
-.portfolio::after, .aboutme::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -2;
-	background: rgba(0, 0, 0, 0.6);
-	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
-}
-
 /*      Portfolio       */
-
-.portfolio.active, .aboutme.active {
-  right: 300px;
-}
 
 /* text */
 .portfolio h2 {
@@ -575,8 +551,79 @@ video {
   margin-right: auto;
 }
 
+/*    Contact Me     */
+
+.info_form_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 6rem;
+    margin-left: 3rem;
+}
+
+.contact-form {
+  padding-top: 17rem;
+  padding-bottom: 14rem;
+}
+
+.text h2 span{
+  color: #00eeff;
+} 
+
+.contact_leftside p, .contact_leftside h2{
+  margin-top: 3rem;
+}
+
+.contact-list{
+  margin-top: 3rem;
+}
+
+.contact-form form{
+  position: relative;
+}
+.contact-form form input,form textarea{
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 18px;
+  background: #555557;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+.contact-form form .send{
+  display: inline-block;
+  background: #0ef;
+  padding: 14px 60px;
+  border-radius: 40px;
+  font-size: 18px;
+  color: #081b29;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  /* opacity: 0; */
+  animation: slideTop 1s ease forwards;
+  animation-delay: 2s;
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef; 
+}
+.contact-form textarea
+{
+  resize: none;
+  height: 220px;
+}
+.contact-form form .send:hover
+{
+    background-color: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 50px cyan, 0 0 100px cyan;
+}
+
+/*    Next Section     */
 
 @media screen and (max-width: 1300px) {
+
+  /* about me */
   .aboutmerow {
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(0px, auto);
@@ -591,6 +638,28 @@ video {
 
 @media screen and (max-width: 900px) {
   
+  /* main */
+
+  .showcase,
+  .showcase header{
+    padding: 40px;
+  }
+  .text h2{
+    font-size: 3.4em;
+  }
+  .text h3{
+    font-size: 1.5em;
+  }
+  .text p{
+    margin-right: 150px;
+  }
+  .text h4 {
+    font-size: 2.5rem;
+  }
+
+
+  /* about me */
+
   .aboutme {
     padding: 3rem;
   }
@@ -618,26 +687,22 @@ video {
   .right_column {
     display: none;
   }
-}
 
-/*    Next Section     */
+  /* contact */
 
-/* media query to scale the text if too big for window size, 900px and under these styles apply */
-@media (max-width: 900px){
-  .showcase,
-  .showcase header{
+  .contactme {
     padding: 40px;
   }
-  .text h2{
-    font-size: 3.4em;
+
+  .info_form_container {
+    display: block;
+    margin-left: 0;
   }
-  .text h3{
-    font-size: 1.5em;
+
+  .contact-form {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
   }
-  .text p{
-    margin-right: 150px;
-  }
-  .text h4 {
-    font-size: 2.5rem;
-  }
+
+
 }
