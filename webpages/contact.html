@@ -5,31 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Contact Me</title>
     <!-- add icon link -->
     <link rel="icon" href="..\images\Logos\HH_Logo_white.png" type="image/x-icon"/>
     <script src="https://kit.fontawesome.com/8695b27503.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
-  <section class="showcase">
+  <section class="contactme">
     <header>
-      <nav>
+      <nav class="navbar" data-aos="slide-down">
         <li class ="logo"><a href="/"><img src = "../images/Logos/HH_Logo_white.png" width = 80px></a></li>
         <div class="toggle"></div>
-    </nav>
+      </nav>
     </header>
 
-    <!-- <video class="othervideo" src="../videos/Gradient_loop.mp4" playsinline muted loop autoplay></video> -->
-    <div class="overlay"></div>
+    <video class="othervideo" src="../videos/Gradient_loop.mp4" playsinline muted loop autoplay></video>
     <main>
-    <div class="text">
-      <h2>Contact Me</h2> 
-      <h3>This page is a work in progress</h3>
-      <p>Come back here again soon for content</p>
-      <!-- <a href="#">See More</a> -->
-    </div>
+      <section class="info_form_container">
+        <div class="contact_leftside" data-aos="fade-right">
+          <div class="text" >
+            <h2><br>Contact<span> Me</span></h2>
+          </div>
+          <div class="contact-text">
+            <p> I'm eager to meet new people and discover opportunities for collaboration.
+              Whether you're interested in my work, have project ideas, or simply want to chat, I'd be delighted to hear from you!
+              Feel free to contact me via email or through my social media profiles.
+              Your messages matter, and I aim to reply promptly.
+              I look forward to connecting with you and discussing potential collaborations!</p>
+            <p style="color:#00eeff"> <strong>Harry.Moore.MEng@gmail.com</p>
+                <!-- <li><i class="bx bxs-phone" style="color:#00eeff;">&nbsp;+44 9142339509</i></li> -->
+            </div>
+          </div>
+        </div>
+        <div class="contact-form" data-aos="fade-left">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="f610b773-10cf-49cd-9b98-55f523268db1">
+            <input type="text" name="name" placeholder="Enter your Name" required>
+            <input type="email" name="email" placeholder="Enter your Email" required>
+            <input type="text" name="subject" placeholder="Enter your Subject" required>
+            <textarea name="message" type="" cols="40" rows="10" placeholder="Enter your messege" required></textarea>
+            <input type="submit" value="submit" class="send"> 
+          </form>
+        </div>
+      </section>
     <footer>
       <ul class="social">
         <li><a href="//www.youtube.com/@HazzaMore"><img src="../images\Logos\youtube-icon.svg"></a></li>
@@ -37,7 +57,7 @@
         <li><a href="//x.com/HazzaMoreEdits"><img src="../images\Logos\x-social-media-black-icon.svg"></a></li>
         <li><a href="//www.instagram.com/harrymooreuk/"><img src="../images\Logos\black-instagram-icon.svg"></a></li>
       </ul>
-  </footer>
+    </footer>
   </section>
 
   <div class="menu">
@@ -52,11 +72,11 @@
 
   <script>
     const menuToggle = document.querySelector('.toggle')
-    const showcase = document.querySelector('.showcase')
+    const contactme = document.querySelector('.contactme')
 
     menuToggle.addEventListener('click', function() {
       menuToggle.classList.toggle('active')
-      showcase.classList.toggle('active')
+      contactme.classList.toggle('active')
     })
   </script>
 
