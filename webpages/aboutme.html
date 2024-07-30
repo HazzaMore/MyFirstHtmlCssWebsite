@@ -1,12 +1,4 @@
 <!DOCTYPE html>
-<!-- 
-Include things such as loserfruit work, other yt work, code projects, artwork etc.
--->
-
-
-
-
-
 <html lang="en">
 
 <head>
@@ -14,6 +6,7 @@ Include things such as loserfruit work, other yt work, code projects, artwork et
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>About Me</title>
     <link rel="icon" href="..\images\Logos\HH_Logo_white.png" type="image/x-icon"/>
     <script src="https://kit.fontawesome.com/8695b27503.js" crossorigin="anonymous"></script>
@@ -26,7 +19,7 @@ Include things such as loserfruit work, other yt work, code projects, artwork et
       <nav class="navbar" data-aos="slide-down">
         <li class ="logo"><a href="/"><img src = "../images/Logos/HH_Logo_white.png" width = 80px></a></li>
         <div class="toggle"></div>
-    </nav>
+      </nav>
     </header>
 
     <video id="othervideo" src="../videos/Gradient_loop.mp4" playsinline muted loop autoplay></video>
@@ -37,7 +30,7 @@ Include things such as loserfruit work, other yt work, code projects, artwork et
         <button onclick="topFunction()" id="ToTopBtn" title="Go to top">Top</button>
       </div>
       <section class="name_profession">
-        <div class="text">
+        <div class="text" data-aos="fade-right" data-aos-delay="500">
           <h3>Harry Moore</h3>
           <h2>Cloud Engineer <br> based in London.</h2>
       </section>
@@ -245,14 +238,12 @@ Include things such as loserfruit work, other yt work, code projects, artwork et
   </script>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
   <script>
     AOS.init({
       offset:400,
       duration: 1000
     });
   </script>
-
   <script>
     window.si = ScrollReveal();
     sr.srreveal('.navbar',{
