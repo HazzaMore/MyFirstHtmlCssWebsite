@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>CV</title>
+    <!-- add icon link -->
+    <link rel="icon" href="..\images\Logos\HH_Logo_white.png" type="image/x-icon"/>
+    <script src="https://kit.fontawesome.com/8695b27503.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <section class="cv">
+    <header>
+      <nav>
+        <li class ="logo"><a href="/"><img src = "../images/Logos/HH_Logo_white.png" width = 80px></a></li>
+        <div class="toggle"></div>
+    </nav>
+    </header>
+
+    <video class="othervideo" src="../videos/Gradient_loop.mp4" playsinline muted loop autoplay></video>
+    <main>
+    <div class="text">
+      <h2>CV</h2> 
+      <div id="ToTopWrapper">
+        <button id="ToTopBtn"><i class="fa fa-download"></i> Download</button>
+      </div>
+    </div>
+
+    <!-- CV Document -->
+    <div id="cvdoc" class="yui-t7">
+      <div id="inner">
+      
+        <div id="hd">
+          <div class="yui-gc">
+            <div class="yui-u first">
+              <h1>Harry Moore</h1>
+              <h2>Cloud Engineer</h2>
+            </div>
+    
+            <div class="yui-u">
+              <div class="contact-info">
+                <h3><a id="pdf" href="#"><i class="fa fa-download"></i> Download PDF</a></h3>
+                <h3><a href="Harry.Moore.MEng@gmail.com">Harry.Moore.MEng@gmail.com</a></h3>
+                <h3>Phone Number on request</h3>
+              </div><!--// .contact-info -->
+            </div>
+          </div><!--// .yui-gc -->
+        </div><!--// hd -->
+    
+        <div id="bd">
+          <div id="yui-main">
+            <div class="yui-b">
+    
+              <div class="yui-gf">
+                <div class="yui-u first">
+                  <h2>Profile</h2>
+                </div>
+                <div class="yui-u">
+                  <p class="enlarge">
+                    Progressively evolve cross-platform ideas before impactful infomediaries. Energistically visualize tactical initiatives before cross-media catalysts for change. 
+                  </p>
+                </div>
+              </div><!--// .yui-gf -->
+    
+              <div class="yui-gf">
+                <div class="yui-u first">
+                  <h2>Skills</h2>
+                </div>
+                <div class="yui-u">
+    
+                    <div class="talent">
+                      <h2>Web Design</h2>
+                      <p>Assertively exploit wireless initiatives rather than synergistic core competencies.	</p>
+                    </div>
+    
+                    <div class="talent">
+                      <h2>Interface Design</h2>
+                      <p>Credibly streamline mission-critical value with multifunctional functionalities.	 </p>
+                    </div>
+    
+                    <div class="talent">
+                      <h2>Project Direction</h2>
+                      <p>Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.</p>
+                    </div>
+                </div>
+              </div><!--// .yui-gf -->
+    
+              <div class="yui-gf">
+                <div class="yui-u first">
+                  <h2>Technical</h2>
+                </div>
+                <div class="yui-u">
+                  <ul class="talent">
+                    <li>XHTML</li>
+                    <li>CSS</li>
+                    <li class="last">Javascript</li>
+                  </ul>
+    
+                  <ul class="talent">
+                    <li>Jquery</li>
+                    <li>PHP</li>
+                    <li class="last">CVS / Subversion</li>
+                  </ul>
+    
+                  <ul class="talent">
+                    <li>OS X</li>
+                    <li>Windows XP/Vista</li>
+                    <li class="last">Linux</li>
+                  </ul>
+                </div>
+              </div><!--// .yui-gf-->
+    
+              <div class="yui-gf">
+      
+                <div class="yui-u first">
+                  <h2>Experience</h2>
+                </div><!--// .yui-u -->
+    
+                <div class="yui-u">
+    
+                  <div class="job">
+                    <h2>Facebook</h2>
+                    <h3>Senior Interface Designer</h3>
+                    <h4>2005-2007</h4>
+                    <p>Intrinsicly enable optimal core competencies through corporate relationships. Phosfluorescently implement worldwide vortals and client-focused imperatives. Conveniently initiate virtual paradigms and top-line convergence. </p>
+                  </div>
+    
+                  <div class="job">
+                    <h2>Apple Inc.</h2>
+                    <h3>Senior Interface Designer</h3>
+                    <h4>2005-2007</h4>
+                    <p>Progressively reconceptualize multifunctional "outside the box" thinking through inexpensive methods of empowerment. Compellingly morph extensive niche markets with mission-critical ideas. Phosfluorescently deliver bricks-and-clicks strategic theme areas rather than scalable benefits. </p>
+                  </div>
+    
+                  <div class="job">
+                    <h2>Microsoft</h2>
+                    <h3>Principal and Creative Lead</h3>
+                    <h4>2004-2005</h4>
+                    <p>Intrinsicly transform flexible manufactured products without excellent intellectual capital. Energistically evisculate orthogonal architectures through covalent action items. Assertively incentivize sticky platforms without synergistic materials. </p>
+                  </div>
+    
+    
+                  <div class="job last">
+                    <h2>International Business Machines (IBM)</h2>
+                    <h3>Lead Web Designer</h3>
+                    <h4>2001-2004</h4>
+                    <p>Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.</p>
+                  </div>
+    
+                </div><!--// .yui-u -->
+              </div><!--// .yui-gf -->
+    
+    
+              <div class="yui-gf last">
+                <div class="yui-u first">
+                  <h2>Education</h2>
+                </div>
+                <div class="yui-u">
+                  <h2>Loughborough University, United Kingdom</h2>
+                  <h3>Masters, Automotive Engineering &mdash; <strong>With Diploma in Industrial Studies</strong> </h3>
+                </div>
+              </div><!--// .yui-gf -->
+    
+    
+            </div><!--// .yui-b -->
+          </div><!--// yui-main -->
+        </div><!--// bd -->
+    
+        <div id="ft">
+          <p>Harry Moore &mdash; <a href="mailto:Harry.Moore.Meng@gmail.com">Harry.Moore.Meng@gmail.com</a></p>
+        </div><!--// footer -->
+    
+      </div><!-- // inner -->
+    
+    
+    </div><!--// doc -->
+    <footer>
+      <ul class="social">
+        <li><a href="//www.youtube.com/@HazzaMore"><img src="../images\Logos\youtube-icon.svg"></a></li>
+        <li><a href="//www.linkedin.com/in/harrymooremeng/"><img src="../images\Logos\linkedin-square-icon.svg"></a></li>
+        <li><a href="//x.com/HazzaMoreEdits"><img src="../images\Logos\x-social-media-black-icon.svg"></a></li>
+        <li><a href="//www.instagram.com/harrymooreuk/"><img src="../images\Logos\black-instagram-icon.svg"></a></li>
+      </ul>
+  </footer>
+  </section>
+
+  <div class="menu">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="/webpages/aboutme.html">About Me</a></li>
+      <li><a href="/webpages/myportfolio.html">My Work</a></li>
+      <li><a href="/webpages/cv.html">CV</a></li>
+      <li><a href="/webpages/contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <script>
+    const menuToggle = document.querySelector('.toggle')
+    const cv = document.querySelector('.cv')
+
+    menuToggle.addEventListener('click', function() {
+      menuToggle.classList.toggle('active')
+      cv.classList.toggle('active')
+    })
+  </script>
+
+  <!-- Required for scroll to reveal -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset:400,
+      duration: 1000
+    });
+  </script>
+
+
+</body>
+</html>
