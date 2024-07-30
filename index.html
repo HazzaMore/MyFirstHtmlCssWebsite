@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Harry / Hazza</title>
     <!-- add icon link -->
     <link rel="icon" href="images\Logos\HH_Logo_white.png" type="image/x-icon"/>
@@ -13,8 +14,8 @@
 <body>
   <section class="showcase">
     <header>
-      <nav>
-        <li class ="logo"><a href="/"><img src = "images/Logos/HH_Logo_white.png" width = 80px></a></li>
+      <nav class="navbar" data-aos="slide-down">
+        <li class ="logo"><a href="/"><img src = "/images/Logos/HH_Logo_white.png" width = 80px></a></li>
         <div class="toggle"></div>
       </nav>
       <script src="https://kit.fontawesome.com/8695b27503.js" crossorigin="anonymous"></script>
@@ -22,11 +23,11 @@
     <video class="mainvideo" src="videos/Gradient_loop.mp4" playsinline muted loop autoplay></video>
     <div class="overlay"></div>
     <main>
-      <section class="text">
+      <section class="text" data-aos="fade">
         <h2>Where Cloud <br> Development </h2> 
-        <h3>Meets Creativity</h3>
-        <p>Discover how Harry/Hazza can empower your company</p>
-        <a href="/webpages/aboutme.html">See More</a>
+        <h3 data-aos="fade" data-aos-delay="1000">Meets Creativity</h3>
+        <p class="index_paragraph" data-aos="fade" data-aos-delay="2400">Discover how Harry/Hazza can empower your company</p>
+        <a href="/webpages/aboutme.html" data-aos="fade" data-aos-delay="2400" data-aos-anchor="index_paragraph">See More</a>
       </section>
   </main>
   <footer>
@@ -59,6 +60,13 @@
     })
   </script>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset:400,
+      duration: 1000
+    });
+  </script>
 
 </body>
 </html>

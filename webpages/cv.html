@@ -9,6 +9,7 @@
     <!-- add icon link -->
     <link rel="icon" href="..\images\Logos\HH_Logo_white.png" type="image/x-icon"/>
     <script src="https://kit.fontawesome.com/8695b27503.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -57,6 +58,15 @@
       menuToggle.classList.toggle('active')
       showcase.classList.toggle('active')
     })
+  </script>
+
+  <!-- Required for scroll to reveal -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset:400,
+      duration: 1000
+    });
   </script>
 
 

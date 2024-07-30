@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Harry / Hazza</title>
     <!-- add icon link -->
     <link rel="icon" href="..\images\Logos\HH_Logo_white.png" type="image/x-icon"/>
@@ -14,23 +15,23 @@
 <body>
   <section class="portfolio" id="portfolio">
     <header>
-      <nav>
+      <nav class="navbar" data-aos="slide-down">
         <li class ="logo"><a href="/"><img src = "../images/Logos/HH_Logo_white.png" width = 80px></a></li>
         <div class="toggle"></div>
-    </nav>
+      </nav>
     </header>
 
     <video class="othervideo" src="../videos/Gradient_loop.mp4" playsinline muted loop autoplay></video>
     <div class="overlay"></div>
     <main>
       <div class="text">
-        <h2>My Portfolio</h2>
+        <h2 data-aos="fade-down" data-aos-anchor="portfolio" data-aos-delay="500">My Portfolio</h2>
       </div> 
 
   <!-- List of Projects -->
-
       <div class= "Portfolio-content">
-        <div class="row">
+
+        <div class="row" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="1000">
           <img src="../images/Portfolio/FrontCoverMockup.png">
           <div class="main-row">
             <div class="row-text">
@@ -43,7 +44,7 @@
           <h4>Loserfruit Anniversary Book 2024</h4>
         </div>
 
-        <div class="row">
+        <div class="row" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="1200">
           <img src="../images/Portfolio/MoreLoserfruit.png">
           <div class="main-row">
             <div class="row-text">
@@ -56,7 +57,7 @@
           <h4>MoreLoserfruit Channel Editing</h4>
         </div>
 
-        <div class="row">
+        <div class="row" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="1400">
           <img src="../images/Portfolio/LoserfruitEmotes.png">
           <div class="main-row">
             <div class="row-text">
@@ -69,7 +70,7 @@
           <h4>Loserfruit Twitch channel emotes and badges</h4>
         </div>
 
-        <div class="row">
+        <div class="row" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="1600">
           <img src="../images/Portfolio/BlenderWork.png">
           <div class="main-row">
             <div class="row-text">
@@ -82,7 +83,7 @@
           <h4>Work for Unique Team Building, Australia</h4>
         </div>
 
-        <div class="row">
+        <div class="row" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="1800">
           <img src="../images/Portfolio/LivBevanWork.png">
           <div class="main-row">
             <div class="row-text">
@@ -147,6 +148,20 @@
     })
   </script>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset:400,
+      duration: 1000
+    });
+  </script>
+  <script>
+    window.si = ScrollReveal();
+    sr.srreveal('.navbar',{
+      duration: 2000,
+      origin: 'bottom'
+    })
+  </script>
 
 </body>
 </html>
