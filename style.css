@@ -90,7 +90,6 @@ nav{
   transition: 0.3s;
 }
 
-
 video {
   position: absolute;
   top: 0;
@@ -352,9 +351,9 @@ footer {
   /* background: #075fe4; */
 }
 
-.row :hover{
+.row:hover{
   border: 1px solid var(--overlay-colour);
-  transform: translateY(-5px) scale(1.03);
+  transform: translateY(-5px) scale(1.2);
   cursor: pointer;
 }
 
