@@ -357,10 +357,7 @@ footer {
   width: 35px;
   height: 35px;
   border-radius: 0px;
-  /* font-size: 17px; */
-  /* border-radius: 50%; */
-  /* color: #dedede; */
-  /* background: #075fe4; */
+  object-fit: contain;
 }
 
 .card:hover{

@@ -30,69 +30,99 @@
   <!-- List of Projects -->
       <div class= "Portfolio-content">
 
-        <div class="card" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="1000">
-          <img class="portfolio_img" src="../images/Portfolio/FrontCoverMockup.png">
-          <div class="main-card">
-            <div class="card-text">
-              <h5>InDesign</h5>
+        <article class="card" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="1000">
+          <div class="portfolio_btn">
+            <img class="portfolio_img" src="../images/Portfolio/FrontCoverMockup.png">
+            <div class="main-card">
+              <div class="card-text">
+                <h5>InDesign</h5>
+              </div>
+              <div class="card-icon">
+                <i><img src="../images/Logos/indesign-icon.svg"></i>
+              </div>
             </div>
-            <div class="card-icon">
-              <i><img src="../images/Logos/indesign-icon.svg"></i>
+            <h4>Loserfruit Anniversary Book 2024</h4>
+          </div>
+          <div class="portfolio__modal">
+            <div class="portfolio__modal-content">
+              <i class="fa-solid fa-x portfolio__modal-close"></i>
+
+              <h2 class="portfolio__modal-title">
+                Book Design
+              </h2>
+
+              <ul class="portfolio__modal-list grid">
+                <li class="portfolio__modal-item">
+                  Coordinated with 96 people from 18 different countries to leave a message to be added to the book.
+                </li>
+
+                <li class="portfolio__modal-item">
+                  Designed 64 uniquely designed pages for showcasing artwork, community pictures, year by year highlights etc.
+                  <br>A further 56 pages were designed with community messages, 2 to a page in the design of a postcard.
+                </li>
+              </ul>
             </div>
           </div>
-          <h4>Loserfruit Anniversary Book 2024</h4>
-        </div>
+        </article>
 
         <div class="card" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="1200">
-          <img src="../images/Portfolio/MoreLoserfruit.png">
-          <div class="main-card">
-            <div class="card-text">
-              <h5>Premiere Pro</h5>
+          <div class="portfolio_btn">
+            <img src="../images/Portfolio/MoreLoserfruit.png">
+            <div class="main-card">
+              <div class="card-text">
+                <h5>Premiere Pro</h5>
+              </div>
+              <div class="card-icon">
+                <i><img src="../images/Logos/adobe-premiere-pro-icon.svg"></i>
+              </div>
             </div>
-            <div class="card-icon">
-              <i><img src="../images/Logos/adobe-premiere-pro-icon.svg"></i>
-            </div>
+            <h4>MoreLoserfruit Channel Editing</h4>
           </div>
-          <h4>MoreLoserfruit Channel Editing</h4>
         </div>
 
         <div class="card" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="1400">
+          <div class="portfolio_btn">
           <img src="../images/Portfolio/LoserfruitEmotes.png">
-          <div class="main-card">
-            <div class="card-text">
-              <h5>Photoshop</h5>
+            <div class="main-card">
+              <div class="card-text">
+                <h5>Photoshop</h5>
+              </div>
+              <div class="card-icon">
+                <i><img src="../images/Logos/adobe-photoshop-icon.svg"></i>
+              </div>
             </div>
-            <div class="card-icon">
-              <i><img src="../images/Logos/adobe-photoshop-icon.svg"></i>
-            </div>
+            <h4>Loserfruit Twitch channel emotes and badges</h4>
           </div>
-          <h4>Loserfruit Twitch channel emotes and badges</h4>
         </div>
 
         <div class="card" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="1600">
-          <img src="../images/Portfolio/BlenderWork.png">
-          <div class="main-card">
-            <div class="card-text">
-              <h5>Blender</h5>
+          <div class="portfolio_btn">
+            <img src="../images/Portfolio/BlenderWork.png">
+            <div class="main-card">
+              <div class="card-text">
+                <h5>Blender</h5>
+              </div>
+              <div class="card-icon">
+                <i><img src="../images/Logos/blender-icon.svg"></i>
+              </div>
             </div>
-            <div class="card-icon">
-              <i><img src="../images/Logos/blender-icon.svg"></i>
-            </div>
+            <h4>Work for Unique Team Building, Australia</h4>
           </div>
-          <h4>Work for Unique Team Building, Australia</h4>
         </div>
 
         <div class="card" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="1800">
-          <img src="../images/Portfolio/LivBevanWork.png">
-          <div class="main-card">
-            <div class="card-text">
-              <h5>Premiere Pro</h5>
+          <div class="portfolio_btn">
+            <img src="../images/Portfolio/LivBevanWork.png">
+            <div class="main-card">
+              <div class="card-text">
+                <h5>Premiere Pro</h5>
+              </div>
+              <div class="card-icon">
+                <i><img src="../images/Logos/adobe-premiere-pro-icon.svg"></i>
+              </div>
             </div>
-            <div class="card-icon">
-              <i><img src="../images/Logos/adobe-premiere-pro-icon.svg"></i>
-            </div>
+            <h4>TikTok Reaction for Liv Bevan</h4>
           </div>
-          <h4>TikTok Reaction for Liv Bevan</h4>
         </div>
 
         <!-- <div class="card">
@@ -161,6 +191,31 @@
       origin: 'bottom'
     })
   </script>
+
+  <!-- pop up js -->
+  <script>
+    const modal = document.querySelectorAll('.portfolio_modal'),
+          modalButton = document.querySelectorAll('.portfolio_btn'),
+          modalClose = document.querySelectorAll('.portfolio__modal-close')
+
+    let activeModal=(modalClick) => {
+        modal[modalClick].classList.add('active-modal')
+    }
+
+    modalButton.forEach((modalButton, i) => {
+        modalButton.addEventListener('click', () => {
+            activeModal(i)
+        })
+    })
+
+    modalClose.forEach((modalClose) =>{
+        modalClose.addEventListener('click', () =>{
+            modalRemove.classList.remove('active-modal')
+        })
+    })
+
+  </script>
+
 
 </body>
 </html>
