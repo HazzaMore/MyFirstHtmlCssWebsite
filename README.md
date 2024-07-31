@@ -14,7 +14,7 @@ https://youtu.be/qP8kir2GUgo?si=w2SZ6EcOjvurGzCX
 ### Custom domain setup
 1. Visit: https://www.hostinger.co.uk/domains
 1. harrymoore.cloud is available for £1.99 for a year
-1. Custom domain can be added at https://github.com/HazzaMore/website/settings/pages
+1. Custom domain can be added following this https://dev.to/sidmohanty11/how-to-add-a-custom-domain-to-github-pages-hostinger-edition-p4p
 
 ## General Git command notes
 |Command|description|
@@ -41,6 +41,7 @@ https://youtu.be/qP8kir2GUgo?si=w2SZ6EcOjvurGzCX
 |How to animate like camillemormal|https://youtu.be/PkADl0HubMY?si=6ba3ppFE4NNY6KaM|
 |Animations upon loading|https://animate.style/|
 |Infinitely scrolling carousel|https://youtu.be/nAjR0Oj0J8E?si=_Gvmm8RnB7vgUcQR|
+|Contact form setup requirements|https://web3forms.com/platforms/html-contact-form|
 |See Watch Later on YT for page design tutorials||
 
 ## Inspiration
