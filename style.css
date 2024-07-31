@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-/* variables */
+/*========= VARIABLES =========*/
 :root{
   --overlay-colour: #e34b33;
   --BlackGrey-colour: #111;
@@ -9,7 +9,7 @@
   --website_blue: #0ef;
 }
 
-
+/*========= APPLY TO ALL =========*/
 *{
   margin: 0;
   padding: 0;
@@ -207,7 +207,7 @@ footer {
   right: 300px;
 }
 
-/*    Main index     */
+/*========= MAIN INDEX =========*/
 .showcase {
   padding: 10%;
   justify-content: space-between;
@@ -267,7 +267,7 @@ footer {
 
 }
 
-/*      Portfolio       */
+/*========= PORTFOLIO =========*/
 
 /* text */
 .portfolio h2 {
@@ -369,11 +369,12 @@ footer {
   box-shadow: 0 0 2px var(--website_blue), 0 0 5px var(--website_blue), 0 0 5px var(--website_blue), 0 0 20px var(--website_blue), 0 0 20px var(--website_blue);
 }
 
-/* .card img:hover {
-  transform: scale(1.3);
-} */
+/*  */
 
-/*    About Me     */
+
+
+
+/*========= ABOUT ME =========*/
 
 .aboutme {
   padding: 100px;
@@ -547,7 +548,7 @@ footer {
   margin-right: auto;
 }
 
-/*    Contact Me     */
+/*========= CONTACT ME =========*/
 
 .info_form_container {
     display: grid;
@@ -615,7 +616,7 @@ footer {
     box-shadow: 0 0 5px var(--website_blue), 0 0 25px var(--website_blue), 0 0 50px var(--website_blue), 0 0 50px var(--website_blue), 0 0 100px var(--website_blue);
 }
 
-/*    CV     */
+/*========= CV =========*/
 
 .cv_word {
   height: 2000px;
@@ -627,7 +628,7 @@ footer {
   height:100%;
 }
 
-/* Mobile and Tablet friendly code */
+/*========= MOBILE/TABLET FRIENDLY CODE =========*/
 
 @media screen and (max-width: 1300px) {
 
