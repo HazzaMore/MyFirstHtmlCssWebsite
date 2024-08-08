@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <section class="portfolio" id="portfolio">
+  <section class="portfolio" id="blur">
     <header>
       <nav class="navbar" data-aos="slide-down">
         <li class ="logo"><a href="/"><img src = "../images/Logos/HH_Logo_white.png" width = 80px></a></li>
@@ -31,7 +31,7 @@
       <div class= "Portfolio-content">
 
         <article class="card" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="1000">
-          <div class="portfolio_btn">
+          <a class="portfolio_btn" onclick="toggle()">
             <img class="portfolio_img" src="../images/Portfolio/FrontCoverMockup.png">
             <div class="main-card">
               <div class="card-text">
@@ -42,27 +42,7 @@
               </div>
             </div>
             <h4>Loserfruit Anniversary Book 2024</h4>
-          </div>
-          <div class="portfolio__modal">
-            <div class="portfolio__modal-content">
-              <i class="fa-solid fa-x portfolio__modal-close"></i>
-
-              <h2 class="portfolio__modal-title">
-                Book Design
-              </h2>
-
-              <ul class="portfolio__modal-list grid">
-                <li class="portfolio__modal-item">
-                  Coordinated with 96 people from 18 different countries to leave a message to be added to the book.
-                </li>
-
-                <li class="portfolio__modal-item">
-                  Designed 64 uniquely designed pages for showcasing artwork, community pictures, year by year highlights etc.
-                  <br>A further 56 pages were designed with community messages, 2 to a page in the design of a postcard.
-                </li>
-              </ul>
-            </div>
-          </div>
+          </a>
         </article>
 
         <div class="card" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="1200">
@@ -168,6 +148,37 @@
     </main>
   </section>
 
+  <div id="popup">
+    <div class="popup_container">
+      <i class="fa-solid fa-x popup-close" onclick="toggle()"></i>
+
+      <h2 class="popup-title">
+        Book Design
+      </h2>
+      <img src="../images/Portfolio/BookPhoto.png"> 
+      <ul class="popup-contents">
+        <li class="popup-list_item">
+          Coordinated with 96 people from 19 different countries to leave a message to be added to the book. 
+          Discord was used as the main form form of communication, with google forms used to collecting images and personalised messages.
+        </li>
+        <li class="popup-list_item">
+          Designed to dimensions set by the distributer
+        </li>
+        <li class="popup-list_item">
+          Designed 64 uniquely designed pages for showcasing artwork, community pictures, year by year highlights etc.
+        </li>
+        <li class="popup-list_item">
+          A further 56 pages were designed with community messages, 2 to a page in the design of a postcard.
+        </li>
+        <li class="popup-list_item">
+          To see an interactive preview of the book, an example of some of the pages can be seen with the link below:
+        </li>
+        <a href="../webpages/book.html">See a preview</a>
+      </ul>
+    </div>
+  </div>
+
+
   <div class="menu">
     <ul>
       <li><a href="../index.html">Home</a></li>
@@ -205,8 +216,19 @@
     })
   </script>
 
+<script type="text/javascript">
+  function toggle(){
+    var blur = document.getElementById('blur')
+    blur.classList.toggle('blur')
+    var popup = document.getElementById('popup')
+    popup.classList.toggle('active')
+  }
+
+</script>
+
+
   <!-- pop up js -->
-  <script>
+  <!-- <script>
     const modal = document.querySelectorAll('.portfolio_modal'),
           modalButton = document.querySelectorAll('.portfolio_btn'),
           modalClose = document.querySelectorAll('.portfolio__modal-close')
@@ -226,8 +248,7 @@
             modalRemove.classList.remove('active-modal')
         })
     })
-
-  </script>
+  </script> -->
 
 
 </body>
