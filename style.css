@@ -379,10 +379,11 @@ footer {
 
 }
 
-#popup{
+/* Common Popup Styles */
+.popup {
   position: fixed;
-  top: 50vh; 
-  left: 50vw; 
+  top: 50vh;
+  left: 50vw;
   transform: translate(-50%, -50%);
   place-items: center;
   padding: 3.5rem 1.5rem;
@@ -396,7 +397,14 @@ footer {
   transition: 0.5s;
 }
 
-.popup_container img{
+.popup.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.popup_container img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -408,46 +416,40 @@ footer {
   margin-top: 30px;
   color: var(--BlackGrey-colour);
 }
+
 .popup_container a:hover {
   background-color: var(--website_blue);
 }
 
-#popup.active{
-  top: 50%;
-  visibility: visible;
-  opacity: 1;
-  transition: 0.5s;
-}
-
-.popup_container::-webkit-scrollbar{
+.popup_container::-webkit-scrollbar {
   width: .6rem;
 }
 
-.popup-title{
+.popup-title {
   text-align: center;
 }
 
-.popup-contents{
+.popup-contents {
   margin-left: 3rem;
 }
 
-.popup-list_item{
+.popup-list_item {
   text-align: initial;
   list-style: square;
 }
 
-.popup-list_item::marker{
+.popup-list_item::marker {
   color: var(--website_blue)
 }
 
-.popup-close{
+.popup-close {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
   font-size: 1.5rem;
-  /* color: var(--overlay-colour); */
   cursor: pointer;
 }
+
 
 /* activate modal */
 .active-modal{

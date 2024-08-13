@@ -27,11 +27,11 @@
         <h2 data-aos="fade-down" data-aos-anchor="portfolio" data-aos-delay="500">My Portfolio</h2>
       </div> 
 
-  <!-- List of Projects -->
+      <!-- List of Projects -->
       <div class= "Portfolio-content">
 
         <article class="card" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="1000">
-          <a class="portfolio_btn" onclick="toggle()">
+          <a class="portfolio_btn" onclick="togglePopup('popup1')">
             <img class="portfolio_img" src="../images/Portfolio/FrontCoverMockup.png">
             <div class="main-card">
               <div class="card-text">
@@ -46,7 +46,7 @@
         </article>
 
         <div class="card" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="1200">
-          <div class="portfolio_btn">
+          <a class="portfolio_btn" onclick="togglePopup('popup2')">
             <img src="../images/Portfolio/MoreLoserfruit.png">
             <div class="main-card">
               <div class="card-text">
@@ -57,12 +57,12 @@
               </div>
             </div>
             <h4>MoreLoserfruit Channel Editing</h4>
-          </div>
+          </a>
         </div>
 
         <div class="card" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="1400">
-          <div class="portfolio_btn">
-          <img src="../images/Portfolio/EmoteArtworkPreview.jpg">
+          <a class="portfolio_btn" onclick="togglePopup('popup3')">
+            <img src="../images/Portfolio/EmoteArtworkPreview.jpg">
             <div class="main-card">
               <div class="card-text">
                 <h5>Photoshop</h5>
@@ -72,11 +72,11 @@
               </div>
             </div>
             <h4>Loserfruit Twitch channel emotes and badges</h4>
-          </div>
+          </a>
         </div>
 
         <div class="card" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="1600">
-          <div class="portfolio_btn">
+          <a class="portfolio_btn" onclick="togglePopup('popup4')">
             <img src="../images/Portfolio/BlenderWork.png">
             <div class="main-card">
               <div class="card-text">
@@ -87,11 +87,11 @@
               </div>
             </div>
             <h4>Work for Unique Team Building, Australia</h4>
-          </div>
+          </a>
         </div>
 
         <div class="card" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="1800">
-          <div class="portfolio_btn">
+          <a class="portfolio_btn" onclick="togglePopup('popup5')">
             <img src="../images/Portfolio/LivBevanWork.png">
             <div class="main-card">
               <div class="card-text">
@@ -102,83 +102,148 @@
               </div>
             </div>
             <h4>TikTok Reaction for Liv Bevan</h4>
-          </div>
+          </a>
         </div>
 
         <div class="card" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="2000">
-          <img src="../images/Portfolio/WebsitePreview.png">
-          <div class="main-card">
-            <div class="card-text">
-              <h5>html and css</h5>
+          <a class="portfolio_btn" onclick="togglePopup('popup6')">
+            <img src="../images/Portfolio/WebsitePreview.png">
+            <div class="main-card">
+              <div class="card-text">
+                <h5>html and css</h5>
+              </div>
+              <div class="card-icon">
+                <i><img src="../images/Logos/html-icon.svg"></i>
+              </div>
             </div>
-            <div class="card-icon">
-              <i><img src="../images/Logos/html-icon.svg"></i>
-            </div>
-          </div>
-          <h4>Website Design</h4>
+            <h4>Website Design</h4>
+          </a>
         </div>
 
         <div class="card" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="2200">
-          <img src="../images/Portfolio/pi5.jpg">
-          <div class="main-card">
-            <div class="card-text">
-              <h5>Ubuntu</h5>
+          <a class="portfolio_btn" onclick="togglePopup('popup7')">
+            <img src="../images/Portfolio/pi5.jpg">
+            <div class="main-card">
+              <div class="card-text">
+                <h5>Ubuntu</h5>
+              </div>
+              <div class="card-icon">
+                <i><img src="../images/Logos/ubuntu-icon.svg"></i>
+              </div>
             </div>
-            <div class="card-icon">
-              <i><img src="../images/Logos/ubuntu-icon.svg"></i>
-            </div>
-          </div>
-          <h4>Raspberry Pi 5 Projects</h4>
+            <h4>Raspberry Pi 5 Projects</h4>
+          </a>
         </div>
 
         <div class="card" data-aos="fade-right" data-aos-anchor="portfolio" data-aos-delay="2400">
-          <img src="../images/Portfolio/CodeAutomation.png">
-          <div class="main-card">
-            <div class="card-text">
-              <h5>Python</h5>
+          <a class="portfolio_btn" onclick="togglePopup('popup8')">
+            <img src="../images/Portfolio/CodeAutomation.png">
+            <div class="main-card">
+              <div class="card-text">
+                <h5>Python</h5>
+              </div>
+              <div class="card-icon">
+                <i><img src="../images/Logos/python-icon.svg"></i>
+              </div>
             </div>
-            <div class="card-icon">
-              <i><img src="../images/Logos/python-icon.svg"></i>
-            </div>
-          </div>
-          <h4>Automation Projects</h4>
+            <h4>Automation Projects</h4>
+          </a>
         </div>
 
       </div>
     </main>
   </section>
 
-  <div id="popup">
+  <!-- Popups for each project -->
+  <div id="popup1" class="popup">
     <div class="popup_container">
-      <i class="fa-solid fa-x popup-close" onclick="toggle()"></i>
-
-      <h2 class="popup-title">
-        Book Design
-      </h2>
-      
+      <i class="fa-solid fa-x popup-close" onclick="togglePopup('popup1')"></i>
+      <h2 class="popup-title">Book Design</h2>
       <img src="../images/Portfolio/BookPhoto.png"> 
       <ul class="popup-contents">
         <li class="popup-list_item">
           Coordinated with 96 people from 19 different countries to leave a message to be added to the book. 
-          Discord was used as the main form form of communication, with google forms used to collecting images and personalised messages.
+          Discord was used as the main form of communication, with google forms used to collecting images and personalised messages.
         </li>
-        <li class="popup-list_item">
-          Designed to dimensions set by the distributer
-        </li>
-        <li class="popup-list_item">
-          Designed 64 uniquely designed pages for showcasing artwork, community pictures, year by year highlights etc.
-        </li>
-        <li class="popup-list_item">
-          A further 56 pages were designed with community messages, 2 to a page in the design of a postcard.
-        </li>
-        <li class="popup-list_item">
-          To see an interactive preview of the book, an example of some of the pages can be seen with the link below:
-        </li>
+        <li class="popup-list_item">Designed to dimensions set by the distributer</li>
+        <li class="popup-list_item">Designed 64 uniquely designed pages for showcasing artwork, community pictures, year by year highlights etc.</li>
+        <li class="popup-list_item">A further 56 pages were designed with community messages, 2 to a page in the design of a postcard.</li>
+        <li class="popup-list_item">To see an interactive preview of the book, an example of some of the pages can be seen with the link below:</li>
         <a href="../webpages/book.html">See a preview (TBC)</a>
       </ul>
     </div>
   </div>
 
+  <!-- Repeat similar structure for other popups -->
+  <div id="popup2" class="popup">
+    <div class="popup_container">
+      <i class="fa-solid fa-x popup-close" onclick="togglePopup('popup2')"></i>
+      <h2 class="popup-title">MoreLoserfruit Channel Editing</h2>
+      <!-- <img src="../images/Portfolio/BookPhoto.png">  -->
+      <ul class="popup-contents">
+        <li class="popup-list_item">Information about this project TBC</li>
+    </div>
+  </div>
+
+  <div id="popup3" class="popup">
+    <div class="popup_container">
+      <i class="fa-solid fa-x popup-close" onclick="togglePopup('popup3')"></i>
+      <h2 class="popup-title">Loserfruit Twitch channel emotes and badges</h2>
+      <!-- <img src="../images/Portfolio/BookPhoto.png">  -->
+      <ul class="popup-contents">
+        <li class="popup-list_item">Information about this project TBC</li>
+    </div>
+  </div>
+
+  <div id="popup4" class="popup">
+    <div class="popup_container">
+      <i class="fa-solid fa-x popup-close" onclick="togglePopup('popup4')"></i>
+      <h2 class="popup-title">Work for Unique Team Building</h2>
+      <!-- <img src="../images/Portfolio/BookPhoto.png">  -->
+      <ul class="popup-contents">
+        <li class="popup-list_item">Information about this project TBC</li>
+    </div>
+  </div>
+
+  <div id="popup5" class="popup">
+    <div class="popup_container">
+      <i class="fa-solid fa-x popup-close" onclick="togglePopup('popup5')"></i>
+      <h2 class="popup-title">Tiktok reaction video for Liv Bevan</h2>
+      <!-- <img src="../images/Portfolio/BookPhoto.png">  -->
+      <ul class="popup-contents">
+        <li class="popup-list_item">Information about this project TBC</li>
+    </div>
+  </div>
+
+  <div id="popup6" class="popup">
+    <div class="popup_container">
+      <i class="fa-solid fa-x popup-close" onclick="togglePopup('popup6')"></i>
+      <h2 class="popup-title">Website Design</h2>
+      <!-- <img src="../images/Portfolio/BookPhoto.png">  -->
+      <ul class="popup-contents">
+        <li class="popup-list_item">Information about this project TBC</li>
+    </div>
+  </div>
+
+  <div id="popup7" class="popup">
+    <div class="popup_container">
+      <i class="fa-solid fa-x popup-close" onclick="togglePopup('popup7')"></i>
+      <h2 class="popup-title">Raspberry Pi Project</h2>
+      <!-- <img src="../images/Portfolio/BookPhoto.png">  -->
+      <ul class="popup-contents">
+        <li class="popup-list_item">Information about this project TBC</li>
+    </div>
+  </div>
+
+  <div id="popup8" class="popup">
+    <div class="popup_container">
+      <i class="fa-solid fa-x popup-close" onclick="togglePopup('popup8')"></i>
+      <h2 class="popup-title">Automation Projects</h2>
+      <!-- <img src="../images/Portfolio/BookPhoto.png">  -->
+      <ul class="popup-contents">
+        <li class="popup-list_item">Information about this project TBC</li>
+    </div>
+  </div>
 
   <div class="menu">
     <ul>
@@ -215,16 +280,14 @@
     })
   </script>
 
-<script type="text/javascript">
-  function toggle(){
-    var blur = document.getElementById('blur')
-    blur.classList.toggle('blur')
-    var popup = document.getElementById('popup')
-    popup.classList.toggle('active')
-  }
-
-</script>
-
+  <script type="text/javascript">
+    function togglePopup(popupId) {
+      var blur = document.getElementById('blur')
+      blur.classList.toggle('blur')
+      var popup = document.getElementById(popupId)
+      popup.classList.toggle('active')
+    }
+  </script>
 
 </body>
 </html>
