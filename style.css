@@ -433,6 +433,8 @@ footer {
 }
 
 .popup_container a {
+  display: flex;
+  justify-content: center;
   background: #e8e8e8;
   margin-top: 30px;
   color: var(--BlackGrey-colour);
