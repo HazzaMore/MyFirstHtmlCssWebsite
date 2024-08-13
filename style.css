@@ -433,6 +433,8 @@ footer {
 }
 
 .popup_container a {
+  display: flex;
+  justify-content: center;
   background: #e8e8e8;
   margin-top: 30px;
   color: var(--BlackGrey-colour);
@@ -448,10 +450,12 @@ footer {
 
 .popup-title {
   text-align: center;
+  font-size: 2.2rem;
 }
 
 .popup-contents {
   margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .popup-list_item {
@@ -801,17 +805,16 @@ footer {
     top: 10%; /* Position slightly below the top */
   /* Ensure the scrollbar is visible */
   }
-  .popup::-webkit-scrollbar {
-    width: 8px; /* Width of the scrollbar */
-  }
+  .popup::-webkit-scrollbar {width: 8px; /* Width of the scrollbar */}
   .popup::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.3); /* Color of the scrollbar thumb */
-    border-radius: 10px; /* Round edges */
-  }
+    border-radius: 10px; /* Round edges */}
   .popup::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0.1); /* Color of the scrollbar track */
+    background-color: rgba(0, 0, 0, 0.1); /* Color of the scrollbar track */}
+  .popup-contents {
+    margin-left: 1.5rem;
+    margin-right: 0rem;
   }
-
   /* contact */
   .contactme {padding: 40px;}
   .info_form_container {display: block; margin-left: 0;}
