@@ -379,6 +379,25 @@ footer {
 
 }
 
+/* Fullscreen overlay to disable interaction with the background */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 199; /* Place it behind the popup */
+  visibility: hidden; /* Hidden by default */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* Common Popup Styles */
 .popup {
   position: fixed;
