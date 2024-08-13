@@ -154,6 +154,9 @@
     </main>
   </section>
 
+  <!-- Overlay to block interactions for pop-ups -->
+  <div id="overlay"></div>
+
   <!-- Popups for each project -->
   <div id="popup1" class="popup">
     <div class="popup_container">
@@ -293,8 +296,13 @@
       } else {
         video.play(); // Play the video when the popup is closed
       }
-
-    }
+      var overlay = document.getElementById('overlay');
+      if (popup.classList.contains('active')) {
+        overlay.classList.add('active'); // Show overlay when popup is active
+      } else {
+        overlay.classList.remove('active'); // Hide overlay when popup is closed
+        }
+      }
   </script>
 
 </body>
