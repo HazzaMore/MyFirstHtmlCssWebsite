@@ -286,6 +286,14 @@
       blur.classList.toggle('blur')
       var popup = document.getElementById(popupId)
       popup.classList.toggle('active')
+      // Backgorund video pausing on pop up opening
+      var video = document.querySelector('.othervideo');
+      if (popup.classList.contains('active')) {
+        video.pause(); // Pause the video when the popup is active
+      } else {
+        video.play(); // Play the video when the popup is closed
+      }
+
     }
   </script>
 
