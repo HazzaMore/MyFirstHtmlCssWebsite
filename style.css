@@ -415,6 +415,10 @@ footer {
   transition: opacity 0.5s ease, visibility 0s 0.5s;
   -webkit-transition: opacity 0.5s ease;
   pointer-events: none; /* Prevent interaction when not visible */
+  max-height: 85vh;
+  height: auto; /* Let height adjust based on content */
+  overflow-y: auto; /* Allow scrolling if content exceeds max-height */
+  top: 10%; /* Position slightly below the top */
 }
 
 .popup.active {
@@ -430,6 +434,8 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .popup_container a {
@@ -438,6 +444,13 @@ footer {
   background: #e8e8e8;
   margin-top: 30px;
   color: var(--BlackGrey-colour);
+}
+
+.popup_container iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
 .popup_container a:hover {
@@ -799,10 +812,6 @@ footer {
     margin-right: 0rem;}
   .popup{
     width: 90%;
-    height: auto; /* Let height adjust based on content */
-    max-height: 85vh; /* Ensure it doesn’t exceed 85% of viewport height */
-    overflow-y: auto; /* Allow scrolling if content exceeds max-height */
-    top: 10%; /* Position slightly below the top */
   /* Ensure the scrollbar is visible */
   }
   .popup::-webkit-scrollbar {width: 8px; /* Width of the scrollbar */}
