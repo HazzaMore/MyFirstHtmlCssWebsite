@@ -91,6 +91,7 @@ nav{
   transition: 0.3s;
 }
 
+/* If Using a video background */
 video {
   position: absolute;
   top: 0;
@@ -101,6 +102,37 @@ video {
   opacity: 1;
   z-index: -3;
   transition: 0s;
+}
+
+/* ============= Animation background ========= */
+.background {
+  background: linear-gradient(132deg, #ff3700, #00e1ff, #ff3700);
+  background-size: 400% 400%;
+  animation: Gradient 10s ease infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  z-index: -3;
+  transition: 0s;
+  padding:0;
+  margin:0px;
+}
+
+/* Animate Background*/
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 footer {
