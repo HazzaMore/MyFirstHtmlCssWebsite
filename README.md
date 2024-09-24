@@ -52,6 +52,6 @@ https://youtu.be/qP8kir2GUgo?si=w2SZ6EcOjvurGzCX
 |Everything about it screams Apple!|http://www.davidpacheco.co/|
 |Nice carousels and apple ai glow effect |https://www.basedash.com/|
 |Bringing 3D into website design|https://anything.world/|
-|Great layout, animations and UI|https://www.azuki.com/about|
+|Great layout, animations and UI|https://www.azuki.com/world|
 |Really nice on hover animations/glows and glasmorphism design|https://www.perryw.ca/|
 |Nice on load animations and wiggle effects|https://rocky.framer.website/|
